@@ -1,0 +1,46 @@
+Book title	ISBN	'var isbns'
+
+Earth		"9780321699039"		x
+Atmosphere	"9780321633118"		x
+Kompendie	"00-invalid-isbn"	x
+Biovetenskap	"00-invalid-isbn"	x
+Chemical principles "9781429239257"	x
+Organic Chemistry	"9780321644169" x
+kompendier	"00-invalid-isbn"
+Sveriges geologi	"9789144058474" (finns på google.books?) nej x
+Marklära	"9789144069203"		(finns på google.books?) nej x
+Berg och jord	"9789187760563"		(finns på google.books?) nej x
+kompendier	"00-invalid-isbn"	x
+Matematik startboken	"9789144048529" (finns på google.books?) ja x
+Calculus	"9781408231401"		x
+Linear Algebra	"9780470561577"		x
+Kompedium	"00-invalid-isbn"	x
+Geographic info	"9780131293175"		x
+Sedimentology	"9781405135924"		x
+vattnets väg	"9789173827621"		(finns på google.books?) ja x
+physical hydrology	"9780199296842" x
+geomorphology	"9780582301566"		x
+Earth structure	"9780393924671"		x
+
+encyclopedia	"9780756638368"		x
+GIS MN1		"9789154060153"		x
+GIS MN2		"9789154060153"		x
+Planeternas geologi	"00-invalid-isbn" x
+Vattenvård		"9162012134"	x
+Kompendie		"00-invalid-isbn" x
+Jordbävningar		"00-invalid-isbn" x
+Mineralogi		"00-invalid-isbn" x
+Applied MATLAB	"9780071086189"
+MATLAB Engineer	"9780131362178"
+Miljö, geologi och hälsa	"9780126363418"
+Istid-nutid-istid		"9780130333445"
+Floristisk och Faunistik	"00-invalid-isbn"
+
+svenska böcker i programmet
+<a href="https://www.google.com/search?tbm=bks&tbo=1&q=0321699033&btnG=#q=9789144058474&hl=en&tbo=1&source=lnms&psj=1&ei=CwW7TqL-JMyP4gTj4_juDw&sa=X&oi=mode_link&ct=mode&cd=1&ved=0CBsQ_AUoAA&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=38a0ddfd1ebc19a6&biw=1024&bih=512" target="_blank" title="ISBN:9789144058474">XXX</a>
+
+<a href="https://www.google.com/search?tbm=bks&tbo=1&q=0321699033&btnG=#q=9789144069203&hl=en&tbo=1&source=lnms&psj=1&ei=zwS7TqPhHs704QSN_cCrCA&sa=X&oi=mode_link&ct=mode&cd=1&ved=0CBsQ_AUoAA&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=8ee6adb96009b707&biw=1024&bih=512" target="_blank" title="ISBN:9789144069203">XXX</a>
+
+<a href="https://www.google.com/search?tbm=bks&tbo=1&q=0321699033&btnG=#q=9789187760563&hl=en&tbo=1&source=lnms&psj=1&ei=zwS7TqPhHs704QSN_cCrCA&sa=X&oi=mode_link&ct=mode&cd=1&ved=0CBsQ_AUoAA&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=8ee6adb96009b707&biw=1024&bih=512" target="_blank" title="ISBN: 9789187760563">XXX</a>
+
+<a href="https://www.google.com/search?tbm=bks&tbo=&btnG=#q=9789144048529&hl=en&tbo=1&source=lnms&psj=1&ei=zwS7TqPhHs704QSN_cCrCA&sa=X&oi=mode_link&ct=mode&cd=1&ved=0CBsQ_AUoAA&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=8ee6adb96009b707&biw=1024&bih=512" target="_blank" title="ISBN: 9789144048529">XXX</a>

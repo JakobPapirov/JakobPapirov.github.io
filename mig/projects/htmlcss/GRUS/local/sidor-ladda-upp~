@@ -1,0 +1,22 @@
+När man sitter och ändrar i koden kan det vara lite drygt att spara->ladda upp sidan(ändringen)->testa den->repeat (man kanske inte ens har internet där man är). Därför tror jag att denna txt kan vara en bra grej att ha för att komma ihåg vilka filer som ska laddas upp sen, efter att man är klar med att ha kollat om allt funkar lokalt. Sen är det ju bara o ta bort allt förutom denna text.
+
+kanske lägger till alla sidorna och så sätter man ett "x" för om den ska läggas upp. Vid fler och större ändringar, dvs sådana som kan behöva mer tid, sätt "xx".
+
+'index.html'			x
+'grus/index.html'		
+'grus/poster.html'		
+'grus/tidigare-tillsatta.html'	
+'grus/tidigare-moten.html'	
+'recce/index.html'		
+'recce/mottagningen.html'	
+'recce/kartor.html'		
+'aktiviteter/index.html'	x
+'aktiviteter/julfesten.html'	
+'aktiviteter/orogenesen.html'	
+'aktiviteter/symposium.html'	
+'resurser/index.html'		
+'resurser/kurser.html'		x
+'resurser/kurslit.html' 	
+'resurser/lankar.html'		x
+'kontakt/index.html'		
+

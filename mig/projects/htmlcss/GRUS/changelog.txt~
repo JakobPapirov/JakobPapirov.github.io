@@ -1,0 +1,34 @@
+Vår interna changelog txt. Vad tror du om det?
+
+Jag lägger kanske till äldre ändringar..
+
+Jakob - 09/11/2011
+	§ Har skapat sidor och lagt till content och fixat x-links;
+	  tidigare-moten, tidigare-tillsatta, kurslit, lankar
+Jakob - 05:24 14/06/2011
+	§ Har lagt till content på Julfesten, Orogenesen och symposium
+Jakob - 16:40 11/06/2011
+	§ Har lagt till "Campus" karta och "Var bor man?" på Kartor
+	§ Lagt till content på Poster
+	§ Har lagt till bild länken på alla sidor till den en-versionen
+	§ Har lagt till funktionallitet på Kurser
+	§ Har skapat sidor;
+	   julfesten, orogenesen, symposium
+Jakob - 14:52 07/06/2011
+	§ Har skapat sidor och lagt in content;
+	   mottagningen, en, poster
+	§ Har lagt till en bild länk till en engelsk version av sidan. Har kopierat alla filer till en-mappen. Fixa 	   sidorna är inte prio.
+Jakob - 17:02 06/06/2011
+	§ Har skapat sidor och lagt in content;
+	   aktiviteter, kontakt, kurser, resurser, kartor, om grus, recce, 
+	§ Såg att dropdown menu såg skumt ut i dreamweaver så jag har ändrat det nu.
+	§ Har kopierat in googleXXXac.html, robots.txt och sitemap.xml.
+	§ Har skapat mapp local och kopierat in google_analytics.txt.
+	§ Har lagt till charset på css:n.
+	§ Har tagit bort lite tomma rader samt snyggat till indenteringen på startsidan. [jag e lite anal, jag vet:P].
+Jakob - 00:00 05/06/2011
+	§ Ändrade adressen till geoc till en google maps länk.
+	§ La tll alt på bilderna.
+Pontus - 05/06/2011
+	§ Gjorde klart mallen som vi ska använda!
+	§ Trixade lite med bilderna.

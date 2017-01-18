@@ -1,0 +1,148 @@
+Tänkte det kan vara bra med en txt över framtida planer men också spontana ideer, etc :)
+
+	->Konkret vad som ska fixas, snarast<-
+
+'index.html'
+	Lägga till nästa möte. 
+'grus/index.html'
+	OK!
+'grus/poster.html'
+	OK!
+'grus/tidigare-tillsatta'
+	OK!
+'grus/tidigare-moten'
+	OK!
+'recce/index.html'
+	OK!
+'recce/mottagningen.html'
+	OK!
+'recce/kartor'
+	Ok!
+'activities/index.html'
+	OK!
+'activities/julfesten.html'
+	OK!
+'activities/orogenesen.html'
+	OK!
+'activities/symposium.html'
+	OK!
+'activities/historik.html'
+	OK!  
+'resurser/index.html'
+	OK!
+'resurser/kurser.html'
+	OK!
+'resurser/tentor.html'
+	OK!
+'resurser/kurslit.html' OK! 
+'resurser/lankar.html' OK!
+'resurser/kontakt.html' OK!
+'en/index.html' - inte prio att fixa. gör det senare.
+
+	->Planer & ideer<-
+
+'index.html'
+	*ordförande kontinuelig spalt
+	*be någon geovetare att skriva något (dvs samt lärare/sgu:are)
+	*grus logga -> href till uncyclopedia/geologists? hehe (eller en månadscykel?)
+'grus/index.html'
+	*det vore kanske bra att det som varje representant säger på mötena hamnar här på sidan och inte bara i ett protokoll. En kompromiss skulle vara att bara det senaste står med.
+	*Det som styrelsen kommer fram till borde stå med på sidan.
+'grus/poster.html'
+	*mail till alla via hemsidan (poster, samt webmaster)
+	*behöver också en kort förklaring om vad de olika posterna innebär, samt vill jag har en kort beskrivning av personen som sitter på posten om sig själv.
+'grus/tidigare-tillsatta'
+	*Lägga till pdf:s på tidigare tillsatta, dvs pdf:s och länkar till dito.
+'grus/tidigare-moten'
+	*Lägga till pdf:s som saknas.
+'recce/index.html'
+	*OK!
+'recce/mottagningen.html' 
+	*Be folk skriva om något minne från deras mottagning.
+	*"varför valde du att plugga geovetenskap och varför vid uppsala universitet?"
+	*skriv om mottagningen i då-tid. kanske lägg till en karta, ev. gör en och 		lägg den i 'recce/kartor.html'.
+'recce/kartor' 
+	*"var bor man" -> ändra auto zoom (går det?). Lägg till tentorna burkar vara någonstans. och som sagt, 
+	*ev. en mottagningen karta.
+	*Lägga till fler platser där man kan bo
+'aktiviter/index.html' 
+	*Lägga till fler, äldre (under året), events
+'aktiviter/julfesten.html'
+	*Lägg till mer info.
+'aktiviter/orogenesen.html'
+	 *Få den befintliga texten att passa in med en post-text 
+	(kanske den som Erika har skrivit till Bladet?).
+'aktiviter/symposium.html'
+	*OK!
+'aktiviter/historik.html'
+	*Skapa!
+	*Den bör ha en inledande text, och sedan länkar till pdf:s till
+	tidigare år (årsvis).
+'resurser/index.html'
+	*Add content... referera till 'aktiviteter.index'.
+'resurser/kurser.html'
+	*Lägg till fler övriga kurser samt Oorganisk kemi. 
+	*Lägg också till länkar till kursutvärderingarna (finns dessa?).
+'resurser/tentor.html'
+	*Skapa!
+	*Den bör också ha med nyttiga saker tex sammanfattningar (kolla upp om det är 		ok med övningstentor på nätet?).
+'resurser/kurslit.html'
+	*Lägga till köp länkar? dvs tex till adlibris? isf kanske det går att få in 		lite cash på det? typ amazon style
+'resurser/lankar.html' 
+	*facebok
+		lägger till fler senare
+		samma content som på facebook
+	*sponsorer?
+		SGU?
+	*Studier
+		nyttiga för plugget tex IPCC
+	*tips på intressanta länkar
+		Youtube?
+	*Har jag länkat til Bladet? (technat, etc?)
+	*r/geology earthporn
+	*disa och allas kand.arb. x-jobb
+	*Jobb
+		Dela in i resp. områden eller kanske skriva lite kort om varje företag.
+		Länkar till ex-jobb
+		Inneboende
+		2:a hand
+'kontakt.html'
+	*Ska ha en webmaster mail något@grus.utn.se
+'en/index.html'
+	*Alla 'en' sidor är inte prio, men skulle kunna göra en "under construction" grej, fast det tar tid i sig.
+
+'sitemap.xml' *OK!
+'robots.txt' *Tagit bort.
+
+				Övrigt
+Pontus:
+	*sidan behöver en 'favicon'!
+	*skär ned bilderna eftersom de skärs ändå ned av css:en -> ska ge snabbare laddning
+	*fixa mailadresser till alla som behöver det, främst oss
+	*Ändra nästa datum och ta bort "?" samt "->"
+
+*en subsida "alumner" och vad de har på gång.
+*info från NAturvetarna samt Geologiska sektionen (via NA), och lokala geologiska sektionen, samt geologiska föreningen (uppasala eller uppland?)
+*tidigare inlägg som har stått med i bladet kan vara kul.
+*ska geovetare som har utmärkt sig på olika sätt (vilka?) få en utmärkelse? man har kanske hjälpt till mycket?
+*lägga till +1 google och like facebook dvs lägg till addthis
+*tidigare exkursioner med bilder och berättelser!
+*skapa en klubbverket/bergakung/guldklimp facebook profil? 
+*'robots.txt' lägg till senare om behövs, tex disallow non-googlebot?
+*lägga till "meta;description" info (microdata)
+*lägga till en "shoutbox" där grusare/andra kan skriva saker.
+*ändra @ line 8 'media="all"' till 'media="screen"'
+*'<p align="center"> </p>' borde göras om via/mha css
+*göra en sida med 'credits' så att säga där man länkar till alla sidor/resurser som har används för att skapa sidan?'
+*byta plats på 'rel link css' och 'rel link js' -> ska ge snabbare laddningstid
+*varför funkar inte 'lastmodified.js'?!
+*"vilken nation är du med, och varför?" - 'resurser/lankar.html'
+*fixa en sitemap?
+*göra en stenwiki :P
+*en lista med alla termer som är bra att kunna (geo)
+*lista med termer som är bra att kunna som recce
+*en länk till nuvarande schema för kurser
+*lägga till sånger/häfte för dl och länk till utn's sångbok
+*lägga till bilder från exkursioner och korta berättelser
+*en subsida för företag 
+*ska vi ha ett forum? (och för planerande) man kan ställa frågor till alla andra och till lärarna
