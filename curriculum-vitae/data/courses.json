@@ -1,1 +1,301 @@
-https://github.com/KirstieJane/STEMMRoleModels/wiki/Creating-new-folders-in-GitHub-repository-via-the-browser
+{
+	"description": [
+		"example: .bsc.semester1.courseList", 
+		"example: .bsc.semester1.s1c1.credits",
+		"example: .bsc.semester1.s1c1.completec"
+	],
+	"description1": "example: .msc.semester1.courseList",
+	"bsc": {
+		"semester1": 
+		{
+			"courseList": [
+				"Berggrunden och livetsutveckling",
+				"Jordarterna och landskapetsutveckling",
+				"Vattnet, klimatet och atmosfären"
+			],
+			"s1c1": 
+			{
+				"credits": 10,
+				"complete": true
+			},
+			"s1c2": {
+				"credits": 10,
+				"complete": true
+			},
+			"s1c3": {
+				"credits": 10,
+				"complete": true
+			}
+		},
+		"semester2": 
+		{
+			"courseList": [
+				"Grundläggande kemi",
+				"Kemiska principer II",
+				"Oorganisk kemi",
+				"Geokemi"
+			],
+			"s2c1": {
+				"credits": 10,
+				"complete": true
+			},
+			"s2c2": {
+				"credits": 5,
+				"complete": false,
+				"incomplete": {
+					"reports": {
+						"credits": 2,
+						"comment": "CMC labrapport."
+					}
+				}
+			},
+			"s2c3": {
+				"credits": 10,
+				"complete": false,
+				"incomplete": {
+					"labsReports": {
+						"credits": 4,
+						"comment": "Laborationer: 3 & rapporter: 3."
+					}
+				}
+			},
+			"s2c4": {
+				"credits": 5,
+				"complete": false,
+				"incomplete": {
+					"exam": {
+						"credits": 2,
+						"comment": "2020-08-26"
+					}
+				}
+			}
+		},
+		"semester3": 
+		{
+			"courseList": [
+				"Bergarter och jordarte",
+				"Dinosauriernas tidsålder",
+				"Naturresurser och miljö"
+			],
+			"s3c1": {
+				"credits": 15,
+				"complete": true
+			},
+			"s3c2": {
+				"credits": 7.5,
+				"complete": true
+			},
+			"s3c3": {
+				"credits": 10,
+				"complete": true
+			}
+		},
+		"semester4":
+		{
+			"courseList": [
+				"Baskurs i matematik",
+				"Linjär algebra och geometri",
+				"Envariabelanalys",
+				"Statistik för geovetare",
+				"Geografisk informationssystem (GIS)"
+			],
+			"s4c1": {
+				"credits": 5,
+				"complete": true
+			},
+			"s4c2": {
+				"credits": 5,
+				"complete": false,
+				"incomplete": {
+					"exam": {
+						"credits": 5,
+						"comment": "2020"
+					}
+				}
+			},
+			"s4c3": {
+				"credits": 10,
+				"complete": false,
+				"incomplete": {
+					"exam": {
+						"credits": 10,
+						"comment": "2020"
+					}
+				}
+			},
+			"s4c4": {
+				"credits": 5,
+				"complete": true
+			},
+			"s4c5": {
+				"credits": 7.5,
+				"complete": false,
+				"incomplete": {
+					"project": {
+						"credits": 3,
+						"comment": "Ett projekt och presentation"
+					},
+					"assignments": {
+						"credits": 2.5,
+						"comment": "Påstås ha ofärdiga inlämningsuppgifter. Kolla upp!"
+					}
+				}
+			}
+		},
+		"semester5":
+		{
+			"courseList": [
+				"Sedimentologi, paleobiologi och stratigrafi",
+				"Hydrologi och vattenresurser",
+				"Landskapsutveckling"
+			],
+			"s5c1": {
+				"credits": 10,
+				"complete": true
+			},
+			"s5c2": {
+				"credits": 10,
+				"complete": true
+			},
+			"s5c3": {
+				"credits": 10,
+				"complete": true
+			}
+		},
+		"semester6":
+		{
+			"courseList": [
+				"Strukturgeologi och markstabilitet",
+				"Självständigt arbete i Geovetenskap"
+			],
+			"s6c1": {
+				"credits": 10,
+				"complete": true
+			},
+			"s6c2": {
+				"credits": 15,
+				"complete": false,
+				"incomplete": {
+					"report": {
+						"credits": 5,
+						"comment": "Är på utkast 2?"
+					}
+				}
+			}
+		}
+	},
+	"msc": {
+		"semester1": 
+		{
+			"courseList": [
+				"Dynamiska geosystem",
+				"Presentation och publicering",
+				"Geovetenskapens analysmetoder"
+			],
+			"s1c1": 
+			{
+				"credits": 15,
+				"complete": true
+			},
+			"s1c2": 
+			{
+				"credits": 5,
+				"complete": false,
+				"incomplete": {
+					"publication": {
+						"credits": 2.5,
+						"comment": "Behöver skiva en artikel."
+					}
+				}
+			},
+			"s1c3": {
+				"credits": 10,
+				"complete": true
+			}
+		},
+		"semester2": 
+		{
+			"courseList": [
+				"Klimatvariationer",
+				"Klimat och landskap",
+				"Hydrokemi",
+				"Statistiska metoder i hydrologi",
+				"Hydromekanik"
+			],
+			"s2c1": {
+				"credits": 5,
+				"complete": true
+			},
+			"s2c2": {
+				"credits": 10,
+				"complete": true
+			},
+			"s2c3": {
+				"credits": 5,
+				"complete": false,
+				"incomplete": {
+					"exam": {
+						"credits": 5,
+						"comment": "Kolla upp vad mer som behöver kompleteras."
+					}
+				}
+			},
+			"s2c4": {
+				"credits": 5,
+				"complete": false,
+				"incomplete": {
+					"exam": {
+						"credits": 5,
+						"comment": "Kolla upp vad mer som behöver kompleteras."
+					}
+				}
+			},
+			"s2c5": {
+				"credits": 5,
+				"complete": false,
+				"incomplete": {
+					"report": {
+						"credits": 2,
+						"comment": "Behöver skicka in en labrapport!"
+					}
+				}
+			}
+		},
+		"semester3": 
+		{
+			"courseList": [
+				"Global hydrologi",
+				"Grundvatten och avrinningsmodellering",
+				"Miljömätteknik"
+			],
+			"s3c1": {
+				"credits": 10,
+				"complete": true
+			},
+			"s3c2": {
+				"credits": 15,
+				"complete": true
+			},
+			"s3c3": {
+				"credits": 5,
+				"complete": true
+			}
+		},
+		"semester4": 
+		{
+			"courseList": [
+				"Examensarbete i Geovetenskap"
+			],
+			"s4c1": {
+				"credits": 30,
+				"complete": false,
+				"incomplete": {
+					"project": {
+						"credits": 30,
+						"comment": "Inte påbörjat än. Planen är HT 2021."
+					}
+				}
+			}
+		}
+	}
+}
