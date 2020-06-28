@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="icon" href="graphics/jp-logo-favico.png" type="image/gif">
+
+		<!-- Remote assets -->
+			<!-- CSS -->
+				<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+				<!-- jQuery UI -->
+				<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+			<!-- JavaScript -->
+				<!-- jQuery -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				<!-- jQuery UI -->
+				<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+			<!-- Font Awesome -->
+			<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+		<!-- Local assets -->
+			<link rel="stylesheet" href="css/grids.css">
+			<link rel="stylesheet" href="css/mainW3.css">
+			<script src="js/index.js"></script>
+			<script src="js/library/footer.js"></script>
+
+		<title>JP.se</title>
+	</head>
+	<body>
+		<div class="grid-container w3-light-blue">
+
+			<!-- Unsure if I should split-up my grid-classes and the w3-classes for future readability vs. potential div and inheritence clutter -->
+			<div class="header w3-container w3-grey">
+				<div class="header-left w3-button w3-center">
+					<a href="#" class="">
+				  	<img src="graphics/logo.svg" alt="Jakob Papirov logo" width="32px" height="32px">
+				 	</a>
+				</div>
+				<div class="header-middle w3-center">
+					<p>Jakob Papirov</p>
+				</div>
+				<div class="header-right">
+					<!-- Unable to combine w3-button and w3-right -->
+					<a href="#" class="w3-button">
+				  	<img src="graphics/icons8-sweden-32.png" alt="Swedish flag">
+				  </a>
+				  <a href="#" class="w3-button">
+				  	<img src="graphics/icons8-great-britain-32.png" alt="British flag" title="not complete yet">
+				  </a>
+				  <a href="#" class="w3-button">
+				  	<img src="graphics/icons8-russian-federation-32.png" alt="Russian flag" title="not complete yet">
+				  </a>
+				  <a href="#" class="w3-button">
+				  	<img src="graphics/icons8-france-32.png" alt="French flag" title="not complete yet">
+				  </a>
+				</div>
+			</div>
+
+			<div class="equation w3-container w3-center w3-margin-top">
+				<img src="graphics/hydrogeologist-equation.png" alt="hydrogeologist equation" title="">
+			</div>
+
+			<div class="quote">
+				<blockquote class="w3-panel w3-leftbar w3-light-grey">
+				  <p class="w3-large"><i class="fa fa-quote-right w3-xxlarge w3-opacity"></i>
+				  <i>"The Whole is Greater than the Sum of its Parts" &dagger;</i></p>
+				</blockquote>
+				<blockquote class="w3-panel w3-sand w3-center">
+			  	<span class="w3-serif w3-xlarge ">
+			  		&#10077; The Whole is Greater than the Sum of its Parts &#10078; &dagger;</span></p>
+				</blockquote>
+			</div>
+
+			<div class="main-bg-images">
+
+				<div class="main-bg-play" id="bg-play-collapse">
+					<button class="bg-button-play" id="playBTN">Fritid <i class="fas fa-angle-double-right"></i></button>
+
+					<div class="w3-half">
+						<div class="w3-container w3-opacity w3-card w3-grey">
+							<h2 class="w3-text-blue w3-center w3-padding-16">
+								<a href="http://jakobpapirov.se/curiculum-vitae/" target="_blank" title="">Curiculum Vitae</a></h2>
+							<h2 class="w3-text-blue w3-center w3-padding-16">
+								<a href="http://jakobpapirov.se/curiculum-vitae/#education" target="_blank" title="">Utbildning</a></h2>
+							<h2 class="w3-text-blue w3-center w3-padding-16">
+								<a href="http://jakobpapirov.se/curiculum-vitae/#employment" target="_blank" title="">Anställningar</a></h2>
+							<h2 class="w3-text-blue w3-center w3-padding-16">
+								<a href="http://jakobpapirov.se/curiculum-vitae/#enskild-firma" target="_blank" title="">Enskild firma</a></h2>
+						</div>
+					</div>
+				</div>
+				<div class="main-bg-work" id="bg-work-collapse">
+					<button class="bg-button-work" id="">Arbete <i class="fas fa-angle-double-left"></i></button>
+					
+
+					<div class="w3-half">
+						<div class="w3-container w3-opacity w3-card w3-grey">
+							<h2 class="w3-text-blue w3-center w3-padding-16">
+								<a href="http://projects.jakobpapirov.se/fitness" target="_blank" title="Min fitnesshemsida">Fitness</a></h2>
+							<h2 class="w3-text-blue w3-center w3-padding-16">
+								<a href="http://adventures.jakobpapirov.se" target="_blank" title="Min äventyrshemsida">Äventyr</a></h2>
+							<h2 class="w3-text-blue w3-center w3-padding-16">
+								<a href="https://www.youtube.com/channel/UCHp9cddLUMXjrCOouXb1UCA/" target="_blank" title="Min YouTubekanal">YouTube</a></h2>
+							<h2 class="w3-text-blue w3-center w3-padding-16">
+								<a href="http://projects.jakobpapirov.se/" target="_blank" title="Mina programmeringsprojekt">Programmering</a></h2>
+						</div>
+					</div>
+					<div class="w3-half">
+						<div class="w3-container w3-opacity w3-card w3-grey w3-padding-16">
+							<img src="graphics/Barbell-32.png" alt="">
+							<img src="graphics/Dumbbell-32.png" alt="">
+							<img src="graphics/Exercise-32.png" alt="">
+						</div>
+						<div class="w3-container w3-opacity w3-card w3-grey w3-padding-16">
+							<img src="graphics/swimming-32.png" alt="">
+							<img src="graphics/traveler-filled-32.png" alt="">
+							<!--<img src="graphics/.png" alt="">-->
+						</div>
+						<div class="w3-container w3-opacity w3-card w3-grey w3-padding-16">
+							<img src="graphics/icons8-play-button-32.png" alt="">
+						</div>
+						<div class="w3-container w3-opacity w3-card w3-grey w3-padding-16">
+							<img src="graphics/icons8-Html-5-32.png" alt="">
+							<img src="graphics/icons8-jQuery-32.png" alt="">
+							<img src="graphics/CSS3-32.png" alt="">
+							<img src="graphics/JavaScript-32.png" alt="">
+							<img src="graphics/Nodejs-32.png" alt="">
+							<!--<img src="graphics/matlab-32.png" alt="">-->
+							<!--<img src="graphics/python-32.png" alt="">-->
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="minion">
+				<!-- Main content: Minion row starts -->
+				<div class="w3-row-padding minion-container">
+					<div class="w3-purple w3-center">
+						<h1>Minion</h1>
+					</div>
+				</div>
+				<!-- Main content: Minion row ends -->
+			</div>
+
+			<div class="references">
+				<!-- Main content: equation and quote explaination starts -->
+				<div class="w3-row-padding w3-grey">
+					<div class="w3-half">
+						<div class="w3-card w3-green">
+							<p>&dagger; Tryck och temperatur är förstås också de viktiga faktorer, eller uttryckt som hur gärna man vill ha vill sin examen och hur nära examen man är. <span class="geology-hammers">&#9874;</span></p>
+							<p>Än så länge finns ingen observerad korrelation mellan temperatur och tid-till-examen... Kanske bör den studerade temperaturspannet ökas? <span class="geology-hammers">&#9874;</span></p>
+						</div>
+					</div>
+					<div class="w3-half">
+						<div class="w3-card w3-green">
+							<p>&Dagger; Påstås vara ett citat av Aristoteles, men det stämmer inte <br>
+								<a href="https://sententiaeantiquae.com/2018/07/06/no-aristotle-didnt-write-a-whole-is-greater-than-the-sum-of-its-parts/" target="_blank" title="">Aristotle didn't write "a whole is greater than the sum of it's parts"</a> <br>
+								<a href="http://se-scholar.com/se-blog/2017/6/23/who-said-the-whole-is-greater-than-the-sum-of-the-parts" target="_blank" title="">Who said "the whole is greater than the sum of the parts?"</a> <span class="geology-hammers">&#9874;</span></p>
+						</div>
+					</div>
+				</div>
+				<!-- Main content: equation and quote explaination ends -->
+			</div>
+
+			<footer>
+
+				<div class="footer-left">
+					
+				</div>
+				<div class="footer-middle">
+					
+				</div>
+				<div class="footer-right">
+					
+				</div>
+			</footer>
+
+		</div>
+	</body>
+</html>
