@@ -1,0 +1,53 @@
+/*body {
+	min-height: 1000px;
+}*/
+
+.header-middle {
+	font-family: Montserrat;
+	font-size: 1.5em; /* Change in height causes the other images to float to the top. */
+	letter-spacing: 10px; 
+}
+
+#bg-play-collapse {
+	/*min-width: 750px;*/
+	/*min-height: 1000px; */
+	background-image: url("../graphics/bg-play-kayaking-1500x1000.png");
+	background-color: #cccccc;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	/*position: relative;*/
+	z-index: -10;
+}
+
+.bg-button-play {
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 25%;
+
+  font-size: 1.5em;
+  /*color: white;*/
+ }
+
+#bg-work-collapse {
+	/*min-width: 750px;*/
+	/*min-height: 1000px; */
+	background-image: url("../graphics/bg-play-kayaking-1500x1000.png");
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	z-index: -10;
+}
+
+.bg-button-work {
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 75%;
+
+  font-size: 1.5em;
+  /*color: white;*/
+ }
+
+.geology-hammers {
+	color: black;
+}

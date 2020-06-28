@@ -1,0 +1,92 @@
+/* Applying main css grids */
+	/* Main content */
+		.grid-container {
+			width: 100%;
+			display: grid;
+			grid-template-areas:	"header"
+									"equation"
+									"blockquote"
+									"main-bg-images"
+									"minion"
+									"references"
+									"footer";
+			grid-template-rows: minmax(50px, auto) 
+								minmax(200px, auto)
+								minmax(200px, auto)
+								minmax(1000px, auto) 
+								minmax(50px, auto) 
+								minmax(100px, auto) 
+								minmax(50px, auto); /* = 7 */
+			grid-template-columns: 1fr;
+		}
+	/* Header */
+		/* Position the header and create nested grids */
+		.header {
+			grid-area: header;
+			width: 100%;
+			display: grid;
+
+			/* Setting up nested grids*/
+			grid-template-areas: "header-left header-middle header-right";
+			/*grid-template-rows: minmax(50px, auto);*/
+			grid-template-columns: 1fr 2fr 1fr;
+		}
+			.header-left {
+				grid-area: header-left;
+			}
+			.header-middle {
+				grid-area: header-middle;
+			}
+			.header-right {
+				grid-area: header-right;
+			}
+/* Positioning the grid items (boxes/areas) */
+	.equation {
+		grid-area: equation;
+	}
+	.blockquote {
+		grid-area: blockquote;
+	}
+	.main-bg-images {
+		grid-area: main-bg-images;
+
+		width: 100%;
+		display: grid;
+
+		/* Setting up nested grids*/
+			grid-template-areas: "main-bg-play main-bg-work";
+			/*grid-template-rows: minmax(50px, auto);*/
+			grid-template-columns: 1fr 1fr;
+	}
+			.main-bg-play {
+				grid-area: main-bg-play;
+			}
+			.main-bg-work {
+				grid-area: main-bg-work;
+			}
+	.minion {
+		grid-area: minion;
+	}
+	.references {
+		grid-area: references;
+	}
+	footer {
+		grid-area: footer;
+
+		width: 100%;
+		display: grid;
+
+		/* Setting up nested grids*/
+			grid-template-areas: "footer-left footer-middle footer-right";
+			grid-template-rows: minmax(50px, auto);
+			grid-template-columns: 1fr 2fr 1fr;
+	}
+			.footer-left {
+				grid-area: footer-left;
+			}
+			.footer-middle {
+				grid-area: footer-middle;
+			}
+			.footer-right {
+				grid-area: footer-right;
+			}
