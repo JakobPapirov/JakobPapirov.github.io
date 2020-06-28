@@ -1,0 +1,58 @@
+/* Applying main css grids */
+	/* Main content */
+	.grid-container {
+		width: 100%;
+		display: grid;
+		grid-template-areas:	"header"
+								"main-content-container"
+								"footer";
+		grid-template-rows: minmax(50px, auto) 
+							minmax(1000px, auto) 
+							minmax(50px, auto); /* = 3 */
+		grid-template-columns: 1fr;
+	}
+	/* Header */
+		/* Position the header and create nested grids */
+		.header {
+			grid-area: header;
+			width: 100%;
+			display: grid;
+
+			/* Setting up nested grids*/
+			grid-template-areas: "header-left header-middle header-right";
+			/*grid-template-rows: minmax(50px, auto);*/
+			grid-template-columns: 1fr 2fr 1fr;
+		}
+			.header-left {
+				grid-area: header-left;
+			}
+			.header-middle {
+				grid-area: header-middle;
+			}
+			.header-right {
+				grid-area: header-right;
+			}
+/* Positioning the grid items (boxes/areas) */
+		.main-content-container {
+			grid-area: main-content-container;
+		}
+		footer {
+			grid-area: footer;
+
+			width: 100%;
+			display: grid;
+
+			/* Setting up nested grids*/
+				grid-template-areas: "footer-left footer-middle footer-right";
+				grid-template-rows: minmax(50px, auto);
+				grid-template-columns: 1fr 2fr 1fr;
+			}
+				.footer-left {
+					grid-area: footer-left;
+				}
+				.footer-middle {
+					grid-area: footer-middle;
+				}
+				.footer-right {
+					grid-area: footer-right;
+				}

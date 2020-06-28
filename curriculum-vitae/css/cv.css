@@ -1,0 +1,139 @@
+/*	To Do:
+	* Modify hr to make it more visible (perhaps on smaller screens)
+	* Check structure of CSS
+	* Do a acessibility check and make website accessible
+	* Perhaps useful https://www.w3schools.com/cssref/css_units.asp
+	* https://www.w3schools.com/w3css/w3css_references.asp#textcolor
+*/	
+
+/*	Fonts
+	Working		Header (Jakob Papirov)						Monteserrat		
+	Working		Timeline text								Helvetica		(from timeline.css)
+	Working		Main tabs titles							Verdana			(li's)
+	Working		Left column/card text						Roboto			(p) [should also be the li's]
+	Working		Subtab main text							Calibri			(p)
+	working	Personal comment (utmaningar och lärdomar)		Comic Sans MS	(button & p)
+	
+	https://css-tricks.com/os-specific-fonts-css/
+	https://www.w3schools.com/cssref/css_websafe_fonts.asp
+	https://www.cssfontstack.com/calibri
+*/
+	#tabsMain li {
+		font-family: Verdana, sans-serif;
+	}
+
+	.w3-third .w3-card-4 p,
+	.w3-third .w3-card-4 li,
+	.w3-third .w3-card-4 a {
+		font-family: "Roboto", sans-serif;
+		font-size: 1.10em;
+	}
+
+	.w3-container p {
+		font-family: calibri, BlinkMacSystemFont;
+		font-size: 1.25em;
+	}
+
+	.accordion,.panel p {
+		/* !important was probably less elegant */
+		font-family: "comic Sans MS", sans-serif;
+		font-size: 1.25em !important;
+	}
+
+#start,#timeline,#education,#employment,#merits,#computer-skills,#languages-skills,#sole {
+	min-height: 1000px;
+}
+
+.header-middle p {
+	font-family: Montserrat;
+	font-size: 1.5em; /* Change in height causes the other images to float to the top. */
+	letter-spacing: 10px; 
+}
+
+/* Change href style */
+	.w3-third .w3-card-4 a:link {
+		text-decoration: none;
+	}
+
+	.w3-third .w3-card-4 a:visited {
+		text-decoration: none;
+	}
+
+	.w3-third .w3-card-4 a:hover {
+		text-decoration: none;
+		background-color: #007fff; /* = jQuery UI tab "current" Blueish*/
+		color: #ffffff; /* = jQuery UI tab "current" Whitish*/
+		padding: 5px 5px;
+		border-radius: 10px;
+		text-align: center;
+	}
+
+	.w3-third .w3-card-4 a:active {
+		text-decoration: none;
+	}
+
+/* HR
+	* want to style it a bit more noticable
+	Status: Not working
+*/
+	/*hr {
+		border: 5px solid;
+	}*/
+
+/* First letter 
+	in subTabs "personal comment" (Utmaningar och lärdomar)
+	* First letter: Have to wait untill I can use it https://caniuse.com/#feat=css-initial-letter
+		https://css-tricks.com/almanac/properties/i/initial-letter/
+*/
+	.panel p::first-letter {
+		font-size: 2em;
+	}
+
+/* Custom bullets
+	Status: Not working
+		https://www.w3.org/Style/Examples/007/color-bullets.en.html
+		https://css-tricks.com/almanac/properties/l/list-style/
+*/	
+	ul {
+		list-style: none;
+	}
+
+	.w3-third .w3-card-4 li,
+	.w3-twothird div div li {
+		position: relative;
+	}
+
+	.w3-third .w3-card-4 li::before,
+	.w3-twothird div div li::before {
+		/*	https://www.toptal.com/designers/htmlarrows/ 
+			https://developer.mozilla.org/en-US/docs/Web/CSS/::before
+			Working:  https://stackoverflow.com/questions/6457059/customize-list-item-bullets-using-css:
+				But the second reply, not the first and accepted
+		*/
+		/* The [div div] solution doesn't seem so elegant */
+
+		content: "\2692"; /* Pickaxe and hammer */
+		margin-left: -1.5em;
+		margin-right: 0.5em;
+		color: #009688; /* = w3-teal*/
+
+		position: absolute;
+		font-size: 1.2em; /* Works due to the positioning in li and li:: before; */
+	}
+
+/*	<!-- https://www.w3schools.com/howto/howto_js_collapse_sidepanel.asp -->
+
+*/
+
+/* Tab: computerSkills */
+	/* Min-height */
+
+	.min-height {
+		min-height: 40vh;
+	}
+
+	/*.min-height:nth-child(1) {
+		position: relative;
+		left: 25%;
+		bottom: 25%;
+	}*/
