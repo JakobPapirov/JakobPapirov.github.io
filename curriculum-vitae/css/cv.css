@@ -6,13 +6,38 @@
 	* https://www.w3schools.com/w3css/w3css_references.asp#textcolor
 */	
 
-/*	Fonts
-	Working		Header (Jakob Papirov)						Monteserrat		
-	Working		Timeline text								Helvetica		(from timeline.css)
-	Working		Main tabs titles							Verdana			(li's)
-	Working		Left column/card text						Roboto			(p) [should also be the li's]
-	Working		Subtab main text							Calibri			(p)
-	working	Personal comment (utmaningar och lärdomar)		Comic Sans MS	(button & p)
+/*		>>> Fonts <<<
+	Header
+	>	"Jakob Papirov"		Monteserrat		(p)
+	Tabs
+		Title
+	>	Heading				Verdana			(li's)
+		Left column
+	>	card text			Roboto			(p) [should also be the li's]
+		Right colum
+	>	Subtab main text	Calibri			(p)
+	>	Tabs headings		Segoe UI		(h2)
+	>	Tabs headings		Segoe UI		(h5)
+	>	Heading				Verdana			(li's)
+		Tab 1
+		Tab 2
+	>	Timeline heading 	Segoe UI		(h2)
+	>	Timeline text		Helvetica		(from timeline.css)
+		Tab 3
+		Tab 4
+	>	Button text 		Comic Sans MS	(button)	
+	>	Personal comment 	Comic Sans MS	(p)
+		Tab 5
+	>	Button text 		Comic Sans MS	(button)	
+	>	Personal comment 	Comic Sans MS	(p)
+		Tab 6
+	>	Button text 		Comic Sans MS	(button)	
+	>	Personal comment 	Comic Sans MS	(p)
+		Tab 7
+		Tab 8
+	>	Button text 		Comic Sans MS	(button)	
+	>	Personal comment	Comic Sans MS	(p)
+	Footer
 	
 	https://css-tricks.com/os-specific-fonts-css/
 	https://www.w3schools.com/cssref/css_websafe_fonts.asp
@@ -36,7 +61,7 @@
 
 	.accordion,.panel p {
 		/* !important was probably less elegant */
-		font-family: "comic Sans MS", sans-serif;
+		font-family: "comic Sans MS", sans-serif !important;
 		font-size: 1.25em !important;
 	}
 
@@ -50,7 +75,7 @@
 	letter-spacing: 10px; 
 }
 
-/* Change href style */
+/* Change anchor style */
 	.w3-third .w3-card-4 a:link {
 		text-decoration: none;
 	}
@@ -58,19 +83,23 @@
 	.w3-third .w3-card-4 a:visited {
 		text-decoration: none;
 	}
-
+	/* Decided not to use at this time. Didn't look nice.
 	.w3-third .w3-card-4 a:hover {
 		text-decoration: none;
 		background-color: #007fff; /* = jQuery UI tab "current" Blueish*/
-		color: #ffffff; /* = jQuery UI tab "current" Whitish*/
-		padding: 5px 5px;
+		/*color: #ffffff; /* = jQuery UI tab "current" Whitish*/
+		/*padding: 5px 5px;
 		border-radius: 10px;
 		text-align: center;
-	}
+	}*/
 
 	.w3-third .w3-card-4 a:active {
 		text-decoration: none;
 	}
+
+.w3-third .w3-card-4 li {
+	padding-bottom: 0.5em;
+}
 
 /* HR
 	* want to style it a bit more noticable
