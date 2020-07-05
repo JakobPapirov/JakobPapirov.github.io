@@ -4,11 +4,12 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="icon" href="graphics/jp-logo-favico.png" type="image/gif">
+		<link rel="icon" href="../graphics/jp-logo-favico.png" type="image/gif">
 
 		<!-- Remote assets -->
 			<!-- CSS -->
 				<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+				<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 				<!-- jQuery UI -->
 				<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 			<!-- JavaScript -->
@@ -16,27 +17,34 @@
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 				<!-- jQuery UI -->
 				<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+				<!-- Google Charts -->
+				<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 			<!-- Font Awesome -->
 			<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+				<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 
 		<!-- Local assets -->
-			<link rel="stylesheet" href="css/grids.css">
-			<link rel="stylesheet" href="css/index.css">
-			<script src="js/index.js"></script>
-			<script src="js/library/footer.js"></script>
+			<link rel="stylesheet" href="css/grids-cv.css">
+			<link rel="stylesheet" href="css/accordion.css">
+			<link rel="stylesheet" href="css/timeline.css">
+			<link rel="stylesheet" href="css/cv.css">
+			<!--<link rel="stylesheet" href="css/keyboard-buttons.css">-->
+			<script src="js/cv.js"></script>
+			<script src="../js/library/footer.js"></script>
 
-		<title>JP.se</title>
+		<title>JP.se | CV</title>
 	</head>
 	<body>
-		<div class="grid-container w3-light-blue">
+		<div class="grid-container">
 
 			<!-- Unsure if I should split-up my grid-classes and the w3-classes for future readability vs. potential div and inheritence clutter -->
+			<!-- Header/navbar starts -->
 			<div class="header w3-container w3-grey">
 				<div class="header-left w3-button w3-center">
-					<a href="#" class="">
-				  	<img src="graphics/logo.svg" alt="Jakob Papirov logo" width="32px" height="32px">
+					<a href="../" class="">
+				  	<img src="../graphics/logo.svg" alt="Jakob Papirov logo" width="32px" height="32px">
 				 	</a>
 				</div>
 				<div class="header-middle w3-center">
@@ -45,141 +53,1989 @@
 				<div class="header-right">
 					<!-- Unable to combine w3-button and w3-right -->
 					<a href="#" class="w3-button">
-				  	<img src="graphics/icons8-sweden-32.png" alt="Swedish flag">
+				  	<img src="../graphics/icons8-sweden-32.png" alt="Swedish flag">
 				  </a>
 				  <a href="#" class="w3-button">
-				  	<img src="graphics/icons8-great-britain-32.png" alt="British flag" title="not complete yet">
+				  	<img src="../graphics/icons8-great-britain-32.png" alt="British flag" title="not complete yet">
 				  </a>
 				  <a href="#" class="w3-button">
-				  	<img src="graphics/icons8-russian-federation-32.png" alt="Russian flag" title="not complete yet">
+				  	<img src="../graphics/icons8-russian-federation-32.png" alt="Russian flag" title="not complete yet">
 				  </a>
 				  <a href="#" class="w3-button">
-				  	<img src="graphics/icons8-france-32.png" alt="French flag" title="not complete yet">
+				  	<img src="../graphics/icons8-france-32.png" alt="French flag" title="not complete yet">
 				  </a>
 				</div>
 			</div>
+			<!-- Header/navbar ends -->
 
-			<div class="equation w3-container w3-center w3-margin-top">
-				<img src="graphics/hydrogeologist-equation.png" alt="hydrogeologist equation" title="">
-			</div>
+			<!-- Main content starts -->
+			<main class="main-content-container" id="tabsMain">
+				<!-- Tabs href starts -->
+				<ul>
+					<li><a href="#start">Default</a></li>
+					<li><a href="#timelineTab">Tidslinje</a></li>
+					<li><a href="#education">Utbildning</a></li>
+					<li><a href="#employment">Anställningar</a></li>
+					<li><a href="#merits-trust">Förtroendeuppdrag &amp; Meriter</a></li>
+					<li><a href="#computer-skills">Datorkunskaper &amp; mjukvaror</a></li>
+					<li><a href="#languages-skills">Språkkunskaper</a></li>
+					<li><a href="#sole">Enskild firma</a></li>
+				</ul>
+				<!-- Tabs href ends -->
 
-			<div class="quote">
-				<blockquote class="w3-panel w3-leftbar w3-light-grey">
-				  <p class="w3-large"><i class="fa fa-quote-right w3-xxlarge w3-opacity"></i>
-				  <i>"The Whole is Greater than the Sum of its Parts" &dagger;</i></p>
-				</blockquote>
-				<blockquote class="w3-panel w3-sand w3-center">
-			  	<span class="w3-serif w3-xlarge ">
-			  		&#10077; The Whole is Greater than the Sum of its Parts &#10078; &dagger;</span></p>
-				</blockquote>
-			</div>
+				<!-- Start fliken starts -->
+				<section class="w3-light-grey" id="start">
+					<!-- Page Container -->
+					<div class="w3-content w3-margin-top" style="max-width:1400px;">
+					  <!-- The Grid -->
+					  <div class="w3-row-padding">
+					  
+					    <!-- Left Column -->
+					    <aside class="w3-third">
 
-			<div class="main-bg-images">
+					      <div class="w3-white w3-text-grey w3-card-4 w3-margin-bottom">
+					        <div class="w3-container">
+					        	<h4>Kontaktuppgifter</h4>
+					          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Blivande hydrogeolog</p>
+					          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Uppsala, Sverige</p>
+					          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jakob&period;papirov [at] gmail.com</p>
+					          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+46709965717</p>
+					          <hr><br>
+					        </div>
+					      </div>
 
-				<div class="main-bg-play" id="bg-play-collapse">
-					<button class="bg-button-play" id="playBTN">Fritid <i class="fas fa-angle-double-right"></i></button>
+					      <div class="w3-white w3-text-grey w3-card-4 w3-margin-bottom">
+					        <div class="w3-container">
+					        	<h4>Hur arbetar jag effektivt?</h4>
+					        		<p>Beror självklart på mitt arbete och arbetsuppgifter men följande verktyg/utrustning finns alltid nära tillhands.</p>
+					        		<p>Klicka på en icon för att ta reda på mer!</p>
+					        	<ul>
+					        		<li>
+					        			<a href="https://www.youtube.com/watch?v=4Nan6Zt6bzw" target="_blank" title="YouTube: What is Dropbox?">
+					        				<img src="graphics/icons8-dropbox-32.png" alt="Dropbox logo"></a></li>
+				        			<li>
+				        				<a href="https://www.akademibokhandeln.se/vara/kulspetspenna-vega-gel-bla/4902505276460/" target="_blank" title="Pilot Vega gel">
+				        					<img src="graphics/icons8-hand-with-pen-32.png" alt="Pen logo"></a> +
+				        				<a href="https://www.hedlundgruppen.com/skriv-och-rit/pappersprodukter/anteckningsbocker/wire-anteckningsbok-945" target="_blank" title="Wire-O Anteckningsbok">
+				        					<img src="graphics/icons8-spiral-bound-booklet-32.png" alt="Notebook logo"></a></li>
+					        		<li>
+					        			<a href="http://everhour.com" target="_blank" title="Everhour">
+					        				<img src="" alt="Everhour logo"></a></li>
+					        		<li>
+					        			<a href="https://www.youtube.com/watch?v=tbQqa-GZ_GI" target="_blank" title="Youtube: What is MS OneNote?">
+					        				<img src="graphics/icons8-microsoft-onenote-32.png" alt="MS OneNote logo"></a></li>
+					        		<li>
+					        			<a href="https://strengthwear.eu/collections/strengthgear/products/eleiko-sports-bottle-insulated?_pos=4&_sid=1a8b82e0c&_ss=r" target="_blank" title="Eleiko waterbottle!">
+					        				<img src="graphics/icons8-bottle-of-water-32.png" alt="Waterbottle logo"></a></li>
+					        		<!--<li>
+					        			<a href="" target="_blank" title="">
+					        				<img src="" alt=""></a></li>-->
+					          </ul>
+					          <hr><br>
+					        </div>
+					      </div>
+					    </aside>
+					    <!-- End Left Column -->
 
-					<div class="w3-half">
-						<div class="w3-container w3-opacity w3-card w3-grey">
-							<h2 class="w3-text-blue w3-center w3-padding-16">
-								<a href="http://jakobpapirov.se/curiculum-vitae/" target="_blank" title="">Curiculum Vitae</a></h2>
-							<h2 class="w3-text-blue w3-center w3-padding-16">
-								<a href="http://jakobpapirov.se/curiculum-vitae/#education" target="_blank" title="">Utbildning</a></h2>
-							<h2 class="w3-text-blue w3-center w3-padding-16">
-								<a href="http://jakobpapirov.se/curiculum-vitae/#employment" target="_blank" title="">Anställningar</a></h2>
-							<h2 class="w3-text-blue w3-center w3-padding-16">
-								<a href="http://jakobpapirov.se/curiculum-vitae/#enskild-firma" target="_blank" title="">Enskild firma</a></h2>
-						</div>
+					    <!-- Right Column -->
+					    <article class="w3-twothird">
+					    
+					      <div class="w3-container w3-white w3-margin-bottom" id="tabsStart">
+									<ul>
+										<li><a href="#sumHireMe">Att anställa mig</a></li>
+										<li><a href="#sumEducation">Sammanställning utbildning</a></li>
+										<li><a href="#sumEmployment">Sammanställning arbete</a></li>
+									</ul>
+									
+									<!-- Subtab starts -->
+									<div class="" id="sumHireMe">
+										<!-- Card starts -->
+						        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Att anställa mig</h2>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Rubrik</b></h5>
+						          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illo obcaecati iure fugiat explicabo nostrum quod soluta veritatis praesentium laborum eveniet totam enim commodi, quam eaque! Ullam neque rem itaque.</p>
+						        </div>
+						        <!-- Card ends -->
+									</div>
+									<!-- Subtab ends -->
+									
+									<!-- Subtab starts -->
+									<div class="" id="sumEducation">
+
+										<!-- Card starts -->
+						        <div class="w3-container w3-card w3-white w3-margin-bottom">
+						        	<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Sammanställning | Utbildning</h2>
+
+						          <h5 class="w3-opacity"><b>Kandidatexamen i Geovetenskap (180 hp)</b></h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Aug 2008 - Aug 2015</h6>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Sep 2019 - Mar 2021</h6>
+							          <p>Framsteg kandidatexamen</p>
+							          <div class="w3-light-grey w3-round-xlarge w3-small">
+							            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="" id="progressBSc"></div>
+							          </div>
+							          <!-- Google Pie chart -->
+							          <div id="pieChartBSc"></div>
+							          <hr><br>
+						        </div>
+						        <!-- Card ends -->
+
+										<!-- Card starts -->
+						        <div class="w3-container w3-card w3-white w3-margin-bottom">
+						          <h5 class="w3-opacity"><b>Masterexamen i Hydrologi/hydrgeologi</b></h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Aug 2012 - Aug 2015</h6>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Mar 2021 - Dec 2021</h6>
+						          <p>Framsteg masterexamen</p>
+							          <div class="w3-light-grey w3-round-xlarge w3-small">
+							            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="" id="progressMSc"></div>
+							          </div>
+							        <p>Framsteg masterexamen - exjobbet</p>
+							          <div class="w3-light-grey w3-round-xlarge w3-small">
+							            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="" id="progressMSc-thesis"></div>
+							          </div>
+						          <ul>
+						          	<li>Ex-jobb</li>
+						          	<li>Hydrologi/hydrogeologi</li>
+						          	<ul>
+						          		<li>Global hydrologi</li>
+						          		<li>Grundvatten och avrinningsmodellering</li>
+						          		<li>Hydrokemi</li>
+						          		<li>Statistiska metoder i hydrologi</li>
+						          		<li>Hydromekanik</li>
+						          	</ul>
+						          	<li>Klimat och miljö</li>
+						          	<ul>
+						          		<li>Miljömätteknik</li>
+						          		<li>Klimatvariationer</li>
+						          		<li>Klimat och landskap</li>
+						          	</ul>
+						          	<li>Geovetenskap</li>
+						          	<ul>
+						          		<li>Dynamiska geosystem</li>
+						          		<li>Presentation och publicering</li>
+						          		<li>Geovetenskapens analysmetoder (IR/Raman)</li>
+						          	</ul>
+						          </ul>
+						          <!-- Google Pie chart -->
+						          <div id="pieChartMSc"></div>
+						          <hr><br>
+						        </div>
+						        <!-- Card ends -->
+
+										<!-- Card starts -->
+						        <div class="w3-container w3-card w3-white w3-margin-bottom">
+						          <h5 class="w3-opacity"><b>Sammanställning examina (300 hp)</b></h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Aug 2008 - Aug 2015</h6>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Mar 2021 - Dec 2021</h6>
+						          	<p>Framsteg utbildning</p>
+						          <div class="w3-light-grey w3-round-xlarge w3-small">
+						            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="" id="progressTotal"></div>
+						          </div>
+						          <ul>
+							        	<li>Geovetenskap</li>
+							        	<ul>
+							        		<li>Hydrologi och hydrogeologi</li>
+							        		<li>Klimat och miljö</li>
+							        		<li>Paleobiologi och sedimentologi</li>
+							        		<li>Kvartärgeologi och naturgeografi</li>
+							        		<li>Geologi</li>
+							        		<li>Geostatistik</li>
+							        	</ul>
+							        	<li>Kemi</li>
+							        	<ul>
+							        		<li>Grundläggande kemi</li>
+							        		<li>Kemiska principer II</li>
+							        		<li>Oorganisk kemi</li>
+							        		<li>Geokemi</li>
+							        	</ul>
+							        	<li>Matematik</li>
+							        	<ul>
+							        		<li>Startkurs i matematik</li>
+							        		<li>Linjär algebra och geometri</li>
+							        		<li>Envariabelanalys</li>
+							        	</ul>
+							        	<li>Geografi</li>
+							        	<ul>
+							        		<li>GIS MN1</li>
+							        	</ul>
+							        </ul>
+							        <hr><br>
+							        <!-- Google Pie chart -->
+							        <div id="pieChartTotal"></div>
+						        </div>
+						        <!-- Card ends -->
+						      </div>
+						      <!-- Subtab ends -->
+									
+									<!-- Subtab starts -->
+						      <div class="" id="sumEmployment">
+						        <div class="w3-container">
+						        	<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Sammanställning | Arbete</h2>
+						          <h5 class="w3-opacity"><b>Arbetsgivare</b></h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Forever</h6>
+						          	<ul>
+						          		<li>Täby kommun</li>
+						          		<li>Stockholms stad</li>
+						          		<li>Uppsala kommun</li>
+						          		<li>VRE education</li>
+						          		<li>Internationella engelska skolan i Uppsala</li>
+						          		<li>Uppsala universitet</li>
+						          		<li>Idétåget</li>
+						          		<li>Svenska McDonald's AB</li>
+						          		<li>Lernia</li>
+						          		<li>Euromaster</li>
+						          		<li>Stålvalsverket</li>
+						          		<li>WSP</li>
+						          		<li>Enskild firma</li>
+						          	</ul>
+						          <hr>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Bransch</b></h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>2013 - 2015</h6>
+						          	<ul>
+						          		<li>Vård och omsorg</li>
+						          		<li>Parksköttsel</li>
+						          		<li>Skola och utbildning</li>
+						          		<li>Naturvetenskapligt arbete</li>
+						          		<li>Bilteknik(er)?</li>
+						          		<li>Administrativt arbete?</li>
+						          	</ul>
+						          <hr>
+						        </div>
+						      </div>
+						      <!-- Subtab ends -->
+						    </div>
+					    </article>
+					    <!-- End Right Column -->
+					  </div>
+					  <!-- End Grid -->
 					</div>
-				</div>
-				<div class="main-bg-work" id="bg-work-collapse">
-					<button class="bg-button-work" id="">Arbete <i class="fas fa-angle-double-left"></i></button>
-					
+					<!-- End Page Container -->
+				</section>
+				<!-- Start fliken starts -->
+				<!-- Timeline fliken starts -->
+				<section class="w3-light-grey" id="timelineTab">
+					<!-- Page Container -->
+					<div class="w3-content w3-margin-top" style="max-width:1400px;">
+					  <!-- The Grid -->
+					  <div class="w3-row-padding">
+					  
+					    <!-- Left Column -->
+					    <aside class="w3-third">
+					    
+					      <div class="w3-white w3-text-grey w3-card-4">
+					        <div class="w3-container">
+					          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Blivande hydrogeolog</p>
+					          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Uppsala, Sverige</p>
+					          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jakob &period; papirov [at] gmail.com</p>
+					          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+46709965717</p>
+					          <hr>
+					        </div>
+					      </div><br>
+					    </aside>
+					    <!-- End Left Column -->
 
-					<div class="w3-half">
-						<div class="w3-container w3-opacity w3-card w3-grey">
-							<h2 class="w3-text-blue w3-center w3-padding-16">
-								<a href="http://projects.jakobpapirov.se/fitness" target="_blank" title="Min fitnesshemsida">Fitness</a></h2>
-							<h2 class="w3-text-blue w3-center w3-padding-16">
-								<a href="http://adventures.jakobpapirov.se" target="_blank" title="Min äventyrshemsida">Äventyr</a></h2>
-							<h2 class="w3-text-blue w3-center w3-padding-16">
-								<a href="https://www.youtube.com/channel/UCHp9cddLUMXjrCOouXb1UCA/" target="_blank" title="Min YouTubekanal">YouTube</a></h2>
-							<h2 class="w3-text-blue w3-center w3-padding-16">
-								<a href="http://projects.jakobpapirov.se/" target="_blank" title="Mina programmeringsprojekt">Programmering</a></h2>
-						</div>
-					</div>
-					<div class="w3-half">
-						<div class="w3-container w3-opacity w3-card w3-grey w3-padding-16">
-							<img src="graphics/Barbell-32.png" alt="">
-							<img src="graphics/Dumbbell-32.png" alt="">
-							<img src="graphics/Exercise-32.png" alt="">
-						</div>
-						<div class="w3-container w3-opacity w3-card w3-grey w3-padding-16">
-							<img src="graphics/swimming-32.png" alt="">
-							<img src="graphics/traveler-filled-32.png" alt="">
-							<!--<img src="graphics/.png" alt="">-->
-						</div>
-						<div class="w3-container w3-opacity w3-card w3-grey w3-padding-16">
-							<img src="graphics/icons8-play-button-32.png" alt="">
-						</div>
-						<div class="w3-container w3-opacity w3-card w3-grey w3-padding-16">
-							<img src="graphics/icons8-Html-5-32.png" alt="">
-							<img src="graphics/icons8-jQuery-32.png" alt="">
-							<img src="graphics/CSS3-32.png" alt="">
-							<img src="graphics/icons8-JavaScript-32.png" alt="">
-							<img src="graphics/Nodejs-32.png" alt="">
-							<!--<img src="graphics/matlab-32.png" alt="">-->
-							<!--<img src="graphics/python-32.png" alt="">-->
-						</div>
-					</div>
+					    <!-- Right Column -->
+					    <article class="w3-twothird">
+					    
+					      <div class="w3-container w3-card w3-margin-bottom" id="tabsTimeline">
+					      	<ul>
+					      		<li><a href="#timelineLife">Tidslinje | Viktiga händelser</a></li>
+					      		<li><a href="#timelineEducation">Tidslinje | Utbildning</a></li>
+					      		<li><a href="#timelineEmployment">Tidslinje | Arbete</a></li>
+					      	</ul>
+									
+									<!-- Subtab starts -->
+					      	<div class="" id="timelineLife">
+					      		<h2 class="w3-text-grey w3-padding-16 w3-center"><i class="far fa-hourglass fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Tidslinje | Livet</h2>
+						        <div class="timeline" id="timeline1">
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>1987</h2>
+										      <p>Född, Moskva, CCCP.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-right">
+										    <div class="timeline-content">
+										      <h2>1989</h2>
+										      <p>Mamma flyttar till Sverige med mig.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>1994/1995</h2>
+										      <p>Min mamma blir sjuk.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-right">
+										    <div class="timeline-content">
+										      <h2>2003-2006</h2>
+										      <p>Studera på naturvetenskapsprogrammet, Åva Gymnasium.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>2006</h2>
+										      <p>Reser till New York, New York, USA i en månad.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-right">
+										    <div class="timeline-content">
+										      <h2>2008</h2>
+										      <p>Börjar studera på kandidatprogrammet i geovetenskap, Uppsala universitet, Uppsala.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>2011</h2>
+										      <p>Träffar min nuvarande sambo.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-right">
+										    <div class="timeline-content">
+										      <h2>2015 - 2017</h2>
+										      <p>Tar studieupphåll &amp; börjar jobba som lärarvikarie.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>2017</h2>
+										      <p>Kayakäventyr #1: Uppsala - Stockholm.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-right">
+										    <div class="timeline-content">
+										      <h2>2017</h2>
+										      <p>Min dotter föds.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>2018-2019</h2>
+										      <p>Pappaledig.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-right">
+										    <div class="timeline-content">
+										      <h2>2019</h2>
+										      <p>Kayakäventyr #2: Västra Mälaren runt!</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>2019</h2>
+										      <p>Återupptar studierna.</p>
+										    </div>
+										  </div>
+										</div>
+									</div>
+									<!-- Subtab ends -->
 
-				</div>
+									<!-- Subtab starts -->
+									<div class="" id="timelineEducation">
+										<h2 class="w3-text-grey w3-padding-16 w3-center"><i class="far fa-hourglass fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Tidslinje | Utbildning</h2>
+						        <div class="timeline" id="timeline2">
+						        	<div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>1994 - 1997</h2>
+										      <p>Lågstadiet, Norskolan, Täby.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-right">
+										    <div class="timeline-content">
+										      <h2>1997 - 2000</h2>
+										      <p>Mellanstadiet, Hillelskolan, Stockholm.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>2000 - 2003</h2>
+										      <p>Högstadiet, Vasa Real, Stockholm.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-right">
+										    <div class="timeline-content">
+										      <h2>2003 - 2006</h2>
+										      <p>Studera på naturvetenskapsprogrammet, Åva Gymnasium.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>2007</h2>
+										      <p>Lumpen som insatsoldat, Luftstridsskolan, Uppsala.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-right">
+										    <div class="timeline-content">
+										      <h2>2008</h2>
+										      <p>Börjar studera kandidatprogrammet i geovetenskap vid Uppsala universitet, Uppsala.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>2012</h2>
+										      <p>Börjar studera masterprogrammet i hydrologi/hydrogeologi vid Uppsala universitet, Uppsala.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-right">
+										  	<div class="timeline-content">
+										  		<h2>2015</h2>
+										  		<p>Studieupphåll kandidatprogrammet &amp; masterprogrammet.</p>
+										  	</div>
+										  </div>
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>2019</h2>
+										      <p>Återupptar studierna i kandidatprogrammet.</p>
+										    </div>
+										  </div>
+										</div>
+									</div>
+									<!-- Subtab ends -->
 
-			</div>
-
-			<div class="minion">
-				<!-- Main content: Minion row starts -->
-				<div class="w3-row-padding minion-container">
-					<div class="w3-purple w3-center">
-						<h1>Minion</h1>
+									<!-- Subtab starts -->
+									<div class="" id="timelineEmployment">
+										<h2 class="w3-text-grey w3-padding-16 w3-center"><i class="far fa-hourglass fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Tidslinje | Arbete</h2>
+						        <div class="timeline" id="timeline3">
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>2002 - 2006</h2>
+										      <p>Jag får mitt första jobb på Svenska McDonald's AB, Täby, efter 2 veckor feirejobb via Täby kommun.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-right">
+										    <div class="timeline-content">
+										      <h2>2006 - 2013</h2>
+										      <p>Personlig assistent (anhörig vårdare), Täby kommun, Täby (2006 - 2013).</p>
+										      <p>Personlig assistent (anhörig vårdare), Frösunda, Täby (2013 - 2013).</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>2014</h2>
+										      <p>Jag sommarjobbar på miljöförvaltningen för Stockholms stad.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-right">
+										    <div class="timeline-content">
+										      <h2>2015</h2>
+										      <p>Lärarvikarie, VRE Education, Stockholm.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>2016 - 2017</h2>
+										      <p>Lärarvikarie, Uppsala kommuns vikarieförmedling, Uppsala.</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-right">
+										    <div class="timeline-content">
+										      <h2>2016 - 2017</h2>
+										      <p>Lärarvikarie, Internationella Engelska Skolan i Uppsala (IESU).</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-left">
+										    <div class="timeline-content">
+										      <h2>2016 - 2017</h2>
+										      <p>Lärare, Uppsala musikklasser (UMK).</p>
+										    </div>
+										  </div>
+										  <div class="timeline-container timeline-right">
+										    <div class="timeline-content">
+										      <h2>2017</h2>
+										      <p>Jag arbetar som Ma/NO lärare (inkl. mentor åk. 6) på Uppsala musikklasser (UMK).</p>
+										    </div>
+										  </div>
+										</div>
+									</div>
+									<!-- Subtab ends -->
+					      </div>
+					    </article>
+					    <!-- End Right Column -->
+					  </div>
+					  <!-- End Grid -->
 					</div>
-				</div>
-				<!-- Main content: Minion row ends -->
-			</div>
+					<!-- End Page Container -->
+				</section>
+				<!-- Timeline fliken ends -->
+				<!-- Utbildning fliken starts -->
+				<section class="w3-light-grey" id="education">
+					<!-- Page Container -->
+					<div class="w3-content w3-margin-top" style="max-width:1400px;">
+						<!-- The Grid -->
+						<div class="w3-row-padding">
 
-			<div class="references">
-				<!-- Main content: equation and quote explaination starts -->
-				<div class="w3-row-padding w3-grey">
-					<div class="w3-half">
-						<div class="w3-card w3-green">
-							<p>&dagger; Tryck och temperatur är förstås också de viktiga faktorer, eller uttryckt som hur gärna man vill ha vill sin examen och hur nära examen man är. <span class="geology-hammers">&#9874;</span></p>
-							<p>Än så länge finns ingen observerad korrelation mellan temperatur och tid-till-examen... Kanske bör den studerade temperaturspannet ökas? <span class="geology-hammers">&#9874;</span></p>
+							<!-- Left Column -->
+					    <aside class="w3-third">
+					    
+					      <div class="w3-white w3-text-grey w3-card-4">
+					        <div class="w3-container">
+					          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Blivande hydrogeolog</p>
+					          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Uppsala, Sverige</p>
+					          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jakob &period; papirov [at] gmail.com</p>
+					          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+46709965717</p>
+					          <hr>
+					        </div>
+					      </div><br>
+					    </aside>
+					    <!-- End Left Column -->
+
+							<!-- Right Column -->
+							<!-- ADD SUBTABS WITH COURSES -->
+					    <article class="w3-twothird">
+
+					      <div class="w3-container w3-card w3-white">
+					        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Utbildning</h2>
+					        <div class="w3-container">
+					          <h5 class="w3-opacity"><b>Masterprogrammet</b> i hydrologi/hydrogeologi (120 hp), Uppsala universitet</h5>
+					          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>
+					          	Aug 2012 - <small>Studieuppehåll fr. o. m. Aug 2015</small></h6>
+					          <p>Har läst fördjupande kurs(er) i vattenkemi, hydrologi samt grundvatten och avrinningsmodellering. Utöver dessa har jag även läst kurs(er) inom klimat, publikations- och presentationsteknik, hydromekanik samt statistik.</p>
+					          <hr>
+					        </div>
+					        <div class="w3-container">
+					          <h5 class="w3-opacity"><b>Kandidatprogrammet</b> i geovetenskap (180 hp), Uppsala universitet</h5>
+					          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>
+					          	Aug 2008 - <small>Studieuppehåll Aug 2015 - Aug 2019</small></h6>
+					          <p>Har läst kurs(er) om jordarter, bergarter, klimat, landskapsutveckling, samt kemi (30 hp), matematik (20 hp) och statistik (5 hp).</p>
+					          <hr>
+					        </div>
+					      </div>
+					    </article>
+					    <!-- End Right Column -->
 						</div>
+						<!-- End Grid -->
 					</div>
-					<div class="w3-half">
-						<div class="w3-card w3-green">
-							<p>&Dagger; Påstås vara ett citat av Aristoteles, men det stämmer inte <br>
-								<a href="https://sententiaeantiquae.com/2018/07/06/no-aristotle-didnt-write-a-whole-is-greater-than-the-sum-of-its-parts/" target="_blank" title="">Aristotle didn't write "a whole is greater than the sum of it's parts"</a> <br>
-								<a href="http://se-scholar.com/se-blog/2017/6/23/who-said-the-whole-is-greater-than-the-sum-of-the-parts" target="_blank" title="">Who said "the whole is greater than the sum of the parts?"</a> <span class="geology-hammers">&#9874;</span></p>
+					<!-- End Page Container -->
+				</section>
+				<!-- Utbildning fliken ends -->
+				<!-- Anställningar fliken starts -->
+				<section class="w3-light-grey" id="employment">
+					<!-- Page Container -->
+					<div class="w3-content w3-margin-top" style="max-width:1400px;">
+						<!-- The Grid -->
+						<div class="w3-row-padding">
+
+							<!-- Left Column -->
+					    <aside class="w3-third">
+					    
+					      <div class="w3-white w3-text-grey w3-card-4">
+					        <div class="w3-container">
+					          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Blivande hydrogeolog</p>
+					          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Uppsala, Sverige</p>
+					          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jakob &period; papirov [at] gmail.com</p>
+					          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+46709965717</p>
+					          <hr>
+					        </div>
+					      </div><br>
+
+					      <div class="w3-white w3-text-grey w3-card-4" id="currentEmployment">
+					        <div class="w3-container">
+					          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Pågående anställning(ar)</h2>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Inget förnärvarande</b></h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Aug 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+						          <p>Har återgått till studier.</p>
+						          <br><hr>
+						        </div>
+					        </div>
+					      </div>
+					    </aside>
+					    <!-- End Left Column -->
+
+							<!-- Right Column -->
+					    <article class="w3-twothird">
+								
+					    	<div class="w3-container w3-card w3-white w3-margin-bottom" id="tabsEmployment">
+					    		<ul>
+					    			<li><a href="#openForEmployment">Tillgänglighet</a></li>
+					    			<li><a href="#longEmployment">Långtidsanställningar</a></li>
+					    			<li><a href="#shortEmployment">Korttidsanställningar</a></li>
+					    		</ul>
+
+									<!-- Pågående anställningar start -->
+					    		<div class="" id="openForEmployment">
+						        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Tillgänglig för...</h2>
+						        <p>Har ett specifikt behov?</p>
+						        <p>Antalet timmar jag är tillgänglig kan variera en vecka till en annan, men tveka inte att kontakta mig!</p>
+						        <ul>
+						        	<li class="w3-padding-16">
+						        		<img src="graphics/icons8-briefcase-64.png" title="Heltidsarbete" alt="Work">Heltidsarbete
+						        			</i><i class="far fa-times-circle fa-3x"></i></li>
+						        	<li class="w3-padding-16">
+						        		<img class="w3-margin-right" src="graphics/icons8-presentation-64.png" title="Presentation" alt="Presentation">Enskild firma: Presentation
+						        		</i><i class="far fa-check-circle fa-3x"></i></li>
+						        	<li class="w3-padding-16">
+						        		<img class="w3-margin-right" src="graphics/icons8-language-64.png" title="Översättning" alt="Översättning">Översättning av rapport (Sv <-> En)
+						        		</i><i class="far fa-check-circle fa-3x"></i></li>
+						        	<li class="w3-padding-16">
+						        		<img class="w3-margin-right" src="graphics/icons8-graph-64.png" title="Dataanalys" alt="Dataanalys">Dataanalys / grafframställning
+						        		</i><i class="far fa-check-circle fa-3x"></i></li>
+						        	<li class="w3-padding-16">
+						        		<img class="w3-margin-right" src="graphics/icons8-copybook-64.png" title="Sammanfattning rapport" alt="Sammanfattning rapport">Sammanfattning rapport.
+						        		</i><i class="far fa-check-circle fa-3x"></i></li>
+						        </ul>
+						      </div>
+					      	<!-- Pågående anställningar ends -->
+								
+									<!-- Långtidsanställningar start -->
+						      <div class="" id="longEmployment">
+						        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Långtidsanställningar </h2>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Lärare</b>, Uppsala musikklasser (UMK)</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Aug 2017 – Dec 2017</h6>
+						          	<p>Arbetade heltid under en termin som Ma/NO-lärare samt mentor åt en Åk. 6. I arbetet ingick lektionsplanering, undervisning, rättning och betygssättning, stöd åt elever som behövde extra hjälp och åt elever som behövde mer utmaningar. Kommunikation med vårdnadshavare, utvecklingssamtal. Utvecklingsarbete inom skolan (konferenser).</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Lärarvikarie</b>, Internationella Engelska Skolan i Uppsala (IESU)</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Apr 2016 – Jun 2017</h6>
+						          	<p>På engelska skolan undervisas NO, Ma i engelska och de andra ämnena på svenska. Skolan efterföljer vissa brittiska inslag som klädkod för lärare och mer disciplin på eleverna. Arbetsspråket på skolan är engelska.</p>
+						          	<p>Har vikarierat i SO, Sv, franska, tyska, musik, science och mathematics.</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Lärarvikarie</b>, Uppsala kommuns vikarieförmedling, Uppsala</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jan 2016 – Jun 2017</h6>
+						          	<p>Lärarvikarie i följande ämnen och årskurser:</p>
+							          <ul>
+							          	<li>Förskoleklass & fritids (F – 3)</li>
+							          	<li>Ma, NO, SO, Idrott, svenska, engelska, franska, spanska, tyska och bild (1 – 9)</li>
+							          </ul>
+						          	<p>Jag har även haft längre vikarieuppdrag på 1 – 15 veckor där egen lektionsplanering, rättning, m.m. har ingått i arbetsuppgifterna.</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Lärarvikarie</b>, VRE Education, Stockholm</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Aug 2015 – Dec 2015</h6>
+						          	<p>Lärarvikarie i följande ämnen och årskurser:</p>
+							          <ul>
+							          	<li>Förskoleklass – åk. 3 (resurs och fritids)</li>
+							          	<li>Ma, NO åk. 7 – 9</li>
+							          	<li>Sv, Ma, NO, SO åk. 7 – 9 (nyanlända)</li>
+							          </ul>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Personlig assistent (anhörig vårdare)</b>, Frösunda, Täby</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Mar 2013 – Dec 2013</h6>
+						          	<p>Har jobbat helger åt en släkting med vardagliga sysslor, så som matlagning, vardagsärenden, etc.</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Personlig assistent (anhörig vårdare)</b>, Täby kommun, Täby</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jan 2006 – Mar 2013</h6>
+						          	<p>Har jobbat helger åt en släkting med vardagliga sysslor, så som matlagning, vardagsärenden, etc.</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Medarbetare</b>, Svenska McDonald’s AB, Täby</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jul 2002 – Dec 2006</h6>
+							          <p>Under min tid lärde jag mig alla stationer (eget initiativ), jobba under stress och i lag.</p>
+							          <ul>
+							          	<li>Jobbade < 7 timmar per vecka i åk. 9.</li>
+													<li>< 12 – 15 timmar per vecka under gymnasiet.</li>
+													<li>30 – 40 timmar per vecka Juni 2006 – December 2006.</li>
+												</ul>
+											<br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						      </div>
+						      <!-- Långtidsanställningar ends -->
+
+									<!-- Korttidsanställningar start -->
+						      <div class="" id="shortEmployment">
+						        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Kortidsanställningar </h2>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Handledare</b>, Uppsala kommun, Uppsala</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jun 2019 – Aug 2019</h6>
+						          	<p>Jag tillhörde Parkenhet 3, Ultuna, och hade som övergripande arbetsuppgift att handleda sommarjobbande ungdomar. Det var tre grupper om c:a 5 ungdomar som arbetade tre veckor vardera. Som handledare lärde jag upp ungdomarna i att plocka ogräs och ta bort skott, såg till att alla kände sig som en viktig del i sin grupp och försökte få dem att arbeta tillsammans. Jag hade ansvaret att ha koll på deras arbetade tider och skickade vidare uppgifterna till lönekontoret. En stor del av arbetet innebar också att hålla humöret uppe då ogräsplockande pågår i ur och skur. Jag strävade efter att vara en god förebild och visa på hur det är att arbeta och ge ungdomarna lite mer så som att räkna på skatt, mm.</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Lernia</b>, Uppsala</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Apr 2019 – Maj 2019</h6>
+						          	<p>Anställd på Lernia som konsult till Euromaster.</p>
+						          	<p>Under anställningens sista vecka fick jag lära mig att måla en fondvägg på Uppsalakontoret</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Lernia, Euromaster</b>, Uppsala</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Apr 2019 – Apr 2019</h6>
+						          	<p>Under april månad har jag haft som uppdrag att hjälpa till på Euromaster med att skifta däck. Arbetet är mycket fysiskt tungt och innefattar långa dagar. Noggrannhet och kvickhet är väsentligt för att genomföra arbetet samt ett gott mod!</p>
+						          	<br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Geotekniker, assistent</b>, WSP, Uppsala</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jul 2016 – Jul 2016</h6>
+						          	<p>Under veckan som fältassistent assisterade jag med borrprovtagning i Rosendal, Uppsala med flera olika metoder.</p>
+						          	<br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Kursbeskrivningar</b>, Uppsala universitet, Uppsala</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Okt 2014 – Nov 2014</h6>
+						          	<p>Jag skrev kursbeskrivningar för alla kurser på master-programmen inom geovetenskap åt studierektorn på master-programmet, både på svenska och engelska, åt en studierektor. Dessa skulle finnas med i kurskatalogen och på webben.</p>
+						          	<br><hr>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Administrativ assistent</b>, Stockholms stads miljöförvaltning, Stockholm</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jun 2014 – Jul 2014</h6>
+						          	<p>Arbetade med att anpassa data från miljögiftsundersökningar till en kommande databas. Arbetet bestod till större delen av att arbeta i Excel och stämma av om datat och konsultrapporterna stämde överens.</p>
+						          	<br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Labassistent</b>, Uppsala universitet, Uppsala</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jun 2013 – Aug 2013</h6>
+						          	<p>Jobbade åt två post-docs med att förbereda havssediment för mikroskåpanalys (nanofossil)</p>
+						          	<br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Studentundersökning</b>, Uppsala universitet, Uppsala</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jan 2013 – Feb 2013</h6>
+						          	<p>Jag blev ombedd av studierektorn på MSc programmet i geovetenskap att svara på följande frågor hos de studenter som avslutat studier inom kandidat-programmet i geovetenskap: Vad gör studenterna nu? Läser de något master-program i geovetenskap? Om någon arbetar, har de planer på att påbörja master-programmet i geovetenskap vid ett senare tillfälle?</p>
+												<p>Undersökningen och rapporten skrevs på engelska.</p>
+						          	<br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Fältasisstent</b>, Uppsala universitet, Uppsala</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jan 2013 – Feb 2013</h6>
+						          	<p>Hjälpte en doktorand med provtagning och analys (mha en gaskromatograf) av vattenprover i fält (Tämnaren).</p>
+						          	<br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Värd</b>, Idétåget, Uppsala</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Apr 2012 – Jun 2012</h6>
+						          	<p>Var värd under Idétåget för Venture Cup Syd, som vill främja entreprenörskap bland unga, samt spred information om eventet i förväg.</p>
+						          	<br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Labassistent</b>, Uppsala universite, Uppsala</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Dec 2011 – Jan 2012</h6>
+						          	<p>Hjälpte en doktorand med att förbereda stenprover för geokemisk analys mha ett mikroskåp, en pincett och tålamod.</p>
+						          	<br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Skiftarbetare</b>, Fredriksverk, Danmark</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jun 2010 – Jun 2010</h6>
+						          	<p>Jag och arbetslaget arbetade tio dagar på ett stålvalsverk med att byta ut färdiggjutna cementblock i stålvalsverket pga slitage. Stålvalsverket tar ett tag att svalna, men temperaturerna är rätt höga trots det. Arbetet var mycket fysiskt krävande och krävde även ett starkt samarbete. Vårt arbetslag arbetade 22 – 06, varje dag.</p>
+						          	<br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						      </div>
+						      <!-- Korttidsanställningar ends -->
+						    </div>
+					    </article>
+					    <!-- End Right Column -->
 						</div>
+						<!-- End Grid -->
 					</div>
-				</div>
-				<!-- Main content: equation and quote explaination ends -->
-			</div>
+					<!-- End Page Container -->
+				</section>
+				<!-- Anställningar fliken ends -->
+				<!-- Meriter fliken starts -->
+				<section class="w3-light-grey" id="merits-trust">
+					<!-- Page Container -->
+					<div class="w3-content w3-margin-top" style="max-width:1400px;">
+						<!-- The Grid -->
+						<div class="w3-row-padding">
+
+							<!-- Left Column -->
+					    <aside class="w3-third">
+					    
+					      <div class="w3-white w3-text-grey w3-card-4">
+					        <div class="w3-container">
+					          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Blivande hydrogeolog</p>
+					          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Uppsala, Sverige</p>
+					          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jakob &period; papirov [at] gmail.com</p>
+					          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+46709965717</p>
+					          <hr>
+					        </div>
+					      </div><br>
+					    </aside>
+					    <!-- End Left Column -->
+
+							<!-- Right Column -->
+					    <article class="w3-twothird">
+
+								<!-- Card starts -->
+					      <div class="w3-container w3-card w3-white w3-margin-bottom" id="tabsMerits">
+					      	<ul>
+					      		<li><a href="#merits">Meriter</a></li>
+					      		<li><a href="#trust">Förtroendeuppdrag</a></li>
+					      	</ul>
+
+					      	<div class="" id="merits">
+							      <!-- Card starts -->
+						        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Meriter</h2>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Kajakäventyr</b>, Västra Mälaren, Sverige</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Sep 2019 – Sep 2019</h6>
+						          	<p>Efter att ha besegrat östra delen av Mälaren två år tidigare var planen nu att även besegra den västra. Och efter mer än ett halvårs planerande och över tremånaders träning tog jag mig an västra Mälaren. Jag paddlade Västerås – Kvicksund – Köping – Kungsör – Kvicksund – Sundbyholms slott – Strängnäs – Enköping – Hjulstabron på 10 dagar (c:a 200 km). Jag klarade målet på max 14 dagar dock inte målet tillbaka till Västerås då jag dessvärre fick avbryta pga för hård vind innan Hjulstabron. #kayakingmälarenwest2019</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Kajakäventyr</b>, Västra Mälaren, Sverige</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jul 2017 – Jul 2017</h6>
+						          	<p>Under knappt fem dagar paddlade jag kajak från Uppsala till Stockholm själv. Motivationen bakom var att jag ville utmana mig själv och se om jag skulle klara av det och under tiden jag hade budgeterat. Kajakäventyret gav mig en större förståelse för min fysiska och mentala förmåga, samt hur jag klarar av en nödsituation. Jag kapsejsade en gång.</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Insatssoldat</b>,  Luftstridsskolan, Uppsala</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jan 2007 – Dec 2007</h6>
+						          	<p>Trots värnpliktslagen, sökte Försvarsmakten främst villiga soldater (pga resursbrist). Jag var en av dem.</p>
+						          	<p>Som insatssoldat så gick jag följande utbildningar: grundsoldatutbildningen, fortsattsoldatutbildningen, skyddsvaktutbildningen, hjärt – och – lungräddning, samt AK5 och KSP-90.</p>
+						          	<p>Militärtjänstgöringen gjorde mig bättre på att känna till min kropps gränser, både fysiskt och mentalt.</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+							      <!-- Card ends -->
+					      	</div>
+
+					      	<div class="" id="trust">
+					      		<!-- Card starts -->
+					      		<h2 class="w3-text-grey w3-padding-16"><i class="fas fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Förtroendeuppdrag</h2>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Pappaledighet</b></h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Mar 2018 – Mar 2019</h6>
+						          	<p>I uppdraget som pappaledig ingick det blöjbyten, matlagning och matning, planering av aktiviteter (stora som små; för dagen och för veckan), anpassa klädsel efter väder, stå för och packa med underhållning, ombyte, språkundervisning i ryska, tillämpad diplomati, kryp – stå och gå-träning, potträning, städning, tvättning, duscha, baby-simskola, ambulansresa, inskolning på förskola och även acceptans av missförstånd.</p>
+						          	<p>De största äventyren vi jag har gjort tillsammans är en resa till Malmö på nästan vecka och diverse tågresor till Stockholm/Västerås.</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Kassör och medlem i styrelsen</b>, IAH Sverige</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Maj 2014 – Juni 2015</h6>
+						          	<p>Kassör i en nystartad svensk förgrening av den globala (International Association of Hydrogeologists) IAH proffessionsföreningen.</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Projektledare</b>, läxläsningen, Uppsala</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jan 2012 – Jun 2012</h6>
+						          	<p>Läxläsning för högstadieelver på Valsätraskolan, delprojekt i ESMeralda projektet av Uppsala Studentkår.</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Kassör</b>(Guldklimp) klubbverket, Studierådet (GRUS)</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Feb 2011 – Feb 2012</h6>
+						          	<p>Hade koll på budgeten och gjorde kalkyler på kommande aktiviteter. Ökade kassan från c:a 300 kr till c:a 5 000 kr</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Webmaster</b>, Studierådet (GRUS)</h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Feb 2010 – Okt 2011</h6>
+						          	<p>Hade lärt mig grundläggande HTML/CSS under vinterlovet och ville tillämpa färdigheterna på att skapa en ny och fräsh hemsida åt GRUS.</p>
+						          <br>
+						          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+							        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur in dolorum consectetur dignissimos doloremque quis inventore dolor incidunt quod aliquam tempore molestiae, corrupti, vero. Illo consectetur dolore impedit ad omnis?</p>
+							        </div>
+						        	<hr><br>
+						        </div>
+							      <!-- Card ends -->
+					      	</div>
+
+					      </div>
+					    </article>
+					    <!-- End Right Column -->
+
+						</div>
+						<!-- End Grid -->
+					</div>
+					<!-- End Page Container -->
+				</section>
+				<!-- Meriter fliken ends -->
+				<!-- Datorkunskaper fliken starts -->
+				<section class="w3-light-grey" id="computer-skills">
+					<!-- Page Container -->
+					<div class="w3-content w3-margin-top" style="max-width:1400px;">
+						<!-- The Grid -->
+						<div class="w3-row-padding">
+
+							<!-- Left Column -->
+					    <aside class="w3-third">
+					    
+					      <div class="w3-white w3-text-grey w3-card-4">
+					        <div class="w3-container">
+					          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Blivande hydrogeolog</p>
+					          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Uppsala, Sverige</p>
+					          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jakob &period; papirov [at] gmail.com</p>
+					          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+46709965717</p>
+					          <hr>
+					        </div>
+					      </div><br>
+					    </aside>
+					    <!-- End Left Column -->
+
+							<!-- Right Column -->
+					    <article class="w3-twothird">
+
+					      <div class="w3-container w3-card w3-white" id="tabsComputerSkills">
+					        	<ul>
+					        		<li><a href="#OS">Operativsystem</a></li>
+					        		<li><a href="#SoftwareGeo">Mjukvaror | Geo</a></li>
+					        		<li><a href="#SoftwareMisc">Mjukvaror | Övrigt</a></li>
+					        		<li><a href="#msOffice">MS Office</a></li>
+					        		<li><a href="#scientific">Beräkningar</a></li>
+					        		<li><a href="#programming">Programming</a></li>
+					        	</ul>
+										
+										<!-- subtTab starts -->
+					        	<div class="w3-row-padding" id="OS">
+
+					        		<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-windows-xp-96.png" title="Windows XP" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>Man kan säga mycket om Windows, men det är i min mening det mest mångsidiga operativsystemet. Jag har vaga minnen från windows 3.11 (?) på Täby biblioteket och Win 95 i lågstadiet. Hemma började jag med Win 98 och sen Win 98 SE. Min första dator som jag köpte för egna pengar körde Win XP som jag har använde i kanske 5 år, innan jag kunde på min nästa dator installera Win 8 via Uppsala universitet och ett gäng år senare Win 10.</p>
+						        					<p>Alla datorer under in utbildning har kört Windows, förutom i åk. 4-5.</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2  w3-center">
+						        			<img class="" src="graphics/icons8-ubuntu-96.png" title="Ubuntu" alt="Ubuntu">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>Under en period när jag var mellan min stationära ägde jag en fantastisk lite <a href="" target="_blank" title="vägde 1 Kg!">Eee PC</a> och när den började bli tröttare testade jag att byta ut den mycket krävande Windows versionen som kom med den, men Ubuntu. Det var en lärorik upplevelse, minst sagt!</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2  w3-center">
+						        			<img class="" src="graphics/icons8-apple-logo-96.png" title="Apple OS" alt="Apple">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Kan googla det jag behöver kolla upp som t.ex. <i>Hur copy-pastar man?</i> <br> Svaret är <kbd>apple + c</kbd>!</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>Alla datorer under in utbildning har kört Windows, förutom i åk. 4-5. Man kunde spela <a href="">Maze wars</a> och <a href="">Spin doctor</a>, och jag tror att man kunde skriva dokument på den också...</p>
+								        			<p>I närtid har jag använt Mac OS X när jag arbetade som lärarvikare på Sigtunaskolan humanistiska lärovärk (SSHL) och på Internationella engelska skolan i Uppsala (IESU).</p>
+								        			<p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+					        	</div>
+					        	<!-- subtTab ends -->
+					        	<!-- subtTab starts -->
+					        	<div class="w3-row-padding" id="SoftwareGeo">
+
+					        		<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>ArcGIS</p>
+										        		</div>
+										        	</div>
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>ArcMap</p>
+										        		</div>
+										        	</div>
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>ArcCatalog</p>
+										        		</div>
+										        	</div>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>HBV-light</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>GMS</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>Phreeqc</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>Hydrosolve</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="https://www.campbellsci.com/layouts/main/styles/images/logo.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>Campbell scientific. https://www.campbellsci.com/data-loggers</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+					        		</div>
+					        	</div>
+					        	<!-- subtTab ends -->
+					        	<!-- subtTab starts -->
+					        	<div class="w3-row-padding" id="msOffice">
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-microsoft-word-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>MS Word</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-microsoft-excel-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>MS Excel</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-microsoft-powerpoint-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>MS Powerpoint</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-microsoft-onenote-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>MS OneNote</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-microsoft-outlook-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>MS Outlook</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-microsoft-access-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>MS access</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+					        	</div>
+					        	<!-- subtTab ends -->
+					        	<!-- subtTab starts -->
+					        	<div class="w3-row-padding" id="scientific">
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-matlab-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>MATLAB</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-python-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-python-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>Python</p>
+										        		</div>
+										        	</div>
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>Scipy</p>
+										        		</div>
+										        	</div>
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>NumPy</p>
+										        		</div>
+										        	</div>
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>Pandas</p>
+										        		</div>
+										        	</div>
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>Anaconda / Conda</p>
+										        		</div>
+										        	</div>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+					        	</div>
+					        	<!-- subtTab ends -->
+					        	<!-- subtTab starts -->
+					        	<div class="" id="SoftwareMisc">
+											<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-console-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>Terminal / console; Ubuntu (+), Power shell (-), RPI. Putty</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+					        		</div>
+
+					        		<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-ftp-server-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>FTP (Winscp)</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+					        		</div>
+
+					        		<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-ssh-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>SSH / Putty</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+					        		</div>
+
+					        		<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-inkscape-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>Inkscape</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+					        		</div>
+
+					        		<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-microsoft-paint-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>Inkscape</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+					        		</div>
+
+					        		<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-microsoft-paint-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>Sniping tool</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+					        		</div>
+					        	</div>
+					        	<!-- subtTab ends -->
+					        	<!-- subtTab starts -->
+					        	<div class="" id="programming">
+
+					        		<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-html-5-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>HTML 5</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-css3-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-python-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>CSS 3</p>
+										        		</div>
+										        	</div>
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>Bootstrap 3.3.x & 5.0-alpha</p>
+										        		</div>
+										        	</div>
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>W3.css</p>
+										        		</div>
+										        	</div>	
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-Javascript-logo-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-Javascript-logo-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>JavaScript</p>
+										        		</div>
+										        	</div>
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-jquery-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>jQuery</p>
+										        		</div>
+										        	</div>
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-jquery-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>jQuery UI</p>
+										        		</div>
+										        	</div>
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-Javascript-logo-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>D3.js</p>
+										        		</div>
+										        	</div>
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-Javascript-logo-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>Datatables</p>
+										        		</div>
+										        	</div>
+										        	<div class="w3-row w3-padding-16">
+										        		<div class="w3-col s2 m2 l2 w3-center">
+										        			<img class="w3-sand" src="graphics/icons8-Javascript-logo-96.png" alt="Windows XP">
+										        		</div>
+										        		<div class="w3-col s10 m10 l10">
+										        			<p>MathJax</p>
+										        		</div>
+										        	</div>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-nodejs-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>NodeJS</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-php-logo-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>PHP</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+											<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-python-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>Python</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-mysql-logo-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>MySQL</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-mongodb-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>MongoDB</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-raspberry-pi-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>Raspberry Pi, python, terminal, project, koppling</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-github-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>GitHub</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+
+						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
+						        		<div class="w3-col s2 m2 l2 w3-center">
+						        			<img class="" src="graphics/icons8-sublime-text-96.png" alt="Windows XP">
+						        		</div>
+						        		<div class="w3-col s10 m10 l10">
+						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
+						        			<p>Jag kan arbeta självgående.</p>
+						        		</div>
+						        		<div class="w3-row-padding ">
+						        			<div class="w3-col s12 m12 l12">
+						        				<button class="accordion w3-button w3-border w3-border-teal w3-round-large">User story</button>
+										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+										        	<p>Sublime text 3</p>
+										        </div>
+						        			</div>
+						        		</div>
+						        		<hr><br>
+						        	</div>
+					        	</div>
+					        	<!-- subtTab ends -->
+
+					      </div>
+					    </article>
+					    <!-- End Right Column -->
+
+						</div>
+						<!-- End Grid -->
+					</div>
+					<!-- End Page Container -->
+				</section>
+				<!-- Datorkunskaper fliken ends -->
+				<!-- Språkkunskaper fliken starts -->
+				<section class="w3-light-grey" id="languages-skills">
+					<!-- Page Container -->
+					<div class="w3-content w3-margin-top" style="max-width:1400px;">
+						<!-- The Grid -->
+						<div class="w3-row-padding">
+
+							<!-- Left Column -->
+					    <aside class="w3-third">
+					    
+					      <div class="w3-white w3-text-grey w3-card-4">
+					        <div class="w3-container">
+					          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Blivande hydrogeolog</p>
+					          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Uppsala, Sverige</p>
+					          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jakob &period; papirov [at] gmail.com</p>
+					          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+46709965717</p>
+					          <hr>
+					        </div>
+					      </div><br>
+					    </aside>
+					    <!-- End Left Column -->
+
+							<!-- Right Column -->
+					    <article class="w3-twothird">
+
+					      <div class="w3-container w3-card w3-white">
+					        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-globe fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Språkkunskaper</h2>
+					        <div class="w3-container">
+					          <h5 class="w3-opacity"><b>Ryska</b></h5>
+					          	<p>Modersmål, nästintillflytande i tal.</p>
+					          <hr>
+					        </div>
+					        <div class="w3-container">
+					          <h5 class="w3-opacity"><b>Svenska</b></h5>
+					          	<p>Flytande i tal i skrift.</p>
+					          <hr>
+					        </div>
+					        <div class="w3-container">
+					          <h5 class="w3-opacity"><b>Engelska</b></h5>
+					          	<p>Flytande i tal i skrift.</p><br>
+					        </div>
+					        <div class="w3-container">
+					          <h5 class="w3-opacity"><b>Franska</b></h5>
+					          	<p>Grundläggande tal och läsning.</p>
+					          	<p>Studerade franska i grundskolan med dåliga resultat, och hade bestämt mig att en dag ta revansch. Hösten 2015 var det dags att börja igen. Har dessvärre haft flera pauser, men lyckades komma en bra bit på Duolingo.</p><br>
+					        </div>
+					      </div>
+					    </article>
+					    <!-- End Right Column -->
+
+						</div>
+						<!-- End Grid -->
+					</div>
+					<!-- End Page Container -->
+				</section>
+				<!-- Språkkunskaper fliken ends -->
+				<!-- Enskild firma fliken starts -->
+				<section class="w3-light-grey" id="sole">
+					<!-- Page Container -->
+					<div class="w3-content w3-margin-top" style="max-width:1400px;">
+						<!-- The Grid -->
+						<div class="w3-row-padding">
+
+							<!-- Left Column -->
+					    <aside class="w3-third">
+					    
+					      <div class="w3-white w3-text-grey w3-card-4">
+					        <div class="w3-container">
+					          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Blivande hydrogeolog</p>
+					          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Uppsala, Sverige</p>
+					          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jakob &period; papirov [at] gmail.com</p>
+					          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+46709965717</p>
+					          <hr>
+					          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>terran [at] jakobpapirov &period; se</p>
+					        </div>
+					      </div><br>
+					    </aside>
+					    <!-- End Left Column -->
+
+							<!-- Right Column -->
+					    <article class="w3-twothird"> <!-- w3-mobile add? -->
+
+								<!-- Card starts -->
+					      <div class="w3-container w3-card w3-white">
+					        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-chalkboard-teacher fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Enskild firma</h2>
+					        <div class="w3-container">
+					          <h5 class="w3-opacity"><b>Studiehjälp, Rosendalsgymnasiet</b></h5>
+					          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jan 2017 – Jun 2017</h6>
+					          	<p>Tog kontakt med flera gymnasieskolor och erbjöd mina tjänster. Rosendals gymnasie var intresserade av studiehjälp.</p>
+					          	<p>Har hjälpt till med rättning av nationellt prov i matematik, samt hjälpt studenter med matematik 1c , 2c, 3c & 4, fysik 1 & 2 och kemi 1 en gång i veckan.</p>
+					          <br>
+					          <button class="accordion w3-button w3-border w3-border-teal w3-round-large">Utmaningar &amp; Lärdomar</button>
+						        <div class="panel first-letter w3-panel w3-blue w3-card-4">
+						        	<p>Det var en utmaning att aldrig veta hur många eller som behövde min hjälp eller vilken kurs och tema! Jag kände att det gjorde mig bättre på matematik och att sätta mig in i ett problem och sedan försöka hjälpa eleven. Ibland kunde jag inte lösa uppgiften själv, utan då försökte vi tillsammans att lösa uppgiften. Det var riktigt kul!</p>
+						        </div>
+						        <hr><br>
+					        </div>
+						    </div>
+						    <!-- Card ends -->
+							</article>
+							<!-- End Right Column -->
+
+						</div>
+						<!-- End Grid -->
+					</div>
+					<!-- End Page Container -->
+				</section>
+				<!-- Enskild firma fliken ends-->
+			</main>
+			<!-- Main content ends -->
 
 			<footer>
 
-				<div class="footer-left">
-					
+				<div class="footer-left w3-center w3-padding-16">
 				</div>
-				<div class="footer-middle">
-					
+				<div class="footer-middle w3-center w3-padding-16">
 				</div>
-				<div class="footer-right">
-					
+				<div class="footer-right w3-center w3-padding-16">
 				</div>
 			</footer>
 
 		</div>
 	</body>
 </html>
+<!-- https://www.w3schools.com/w3css/tryw3css_templates_cv.htm -->
