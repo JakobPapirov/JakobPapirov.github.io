@@ -39,31 +39,37 @@
 	<body>
 		<div class="grid-container">
 
-			<!-- Unsure if I should split-up my grid-classes and the w3-classes for future readability vs. potential div and inheritence clutter -->
 			<!-- Header/navbar starts -->
 			<div class="header w3-container w3-grey">
-				<div class="header-left w3-button w3-center">
-					<a href="../" class="">
-				  	<img src="../graphics/logo.svg" alt="Jakob Papirov logo" width="32px" height="32px">
+				<div class="header-left ">
+					<a href="../" class="" title="Startsida">
+				  	<img src="../graphics/logo.svg" alt="Jakob Papirov logo" width="96px" height="96px">
 				 	</a>
 				</div>
-				<div class="header-middle w3-center">
+				<div class="header-middle">
 					<p>Jakob Papirov</p>
 				</div>
 				<div class="header-right">
-					<!-- Unable to combine w3-button and w3-right -->
-					<a href="#" class="w3-button">
-				  	<img src="../graphics/icons8-sweden-32.png" alt="Swedish flag">
-				  </a>
-				  <a href="#" class="w3-button">
-				  	<img src="../graphics/icons8-great-britain-32.png" alt="British flag" title="not complete yet">
-				  </a>
-				  <a href="#" class="w3-button">
-				  	<img src="../graphics/icons8-russian-federation-32.png" alt="Russian flag" title="not complete yet">
-				  </a>
-				  <a href="#" class="w3-button">
-				  	<img src="../graphics/icons8-france-32.png" alt="French flag" title="not complete yet">
-				  </a>
+					<div class="swe-flag">
+						<a href="#" class="w3-button">
+					  	<img src="../graphics/icons8-sweden-32.png" alt="Swedish flag">
+					  </a>
+				  </div>
+				  <div class="en-flag">
+					  <a href="#" class="w3-button">
+					  	<img src="../graphics/icons8-great-britain-32.png" alt="British flag" title="not complete yet">
+					  </a>
+					</div>
+					<div class="ru-flag">
+					  <a href="#" class="w3-button">
+					  	<img src="../graphics/icons8-russian-federation-32.png" alt="Russian flag" title="not complete yet">
+					  </a>
+					</div>
+					<div class="fr-flag">
+					  <a href="#" class="w3-button">
+					  	<img src="../graphics/icons8-france-32.png" alt="French flag" title="not complete yet">
+					  </a>
+					</div>
 				</div>
 			</div>
 			<!-- Header/navbar ends -->
@@ -95,7 +101,7 @@
 
 					      <div class="w3-white w3-text-grey w3-card-4 w3-margin-bottom">
 					        <div class="w3-container">
-					        	<h4>Kontaktuppgifter</h4>
+					        	<h4 class="w3-center">Kontaktuppgifter</h4>
 					          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Blivande hydrogeolog</p>
 					          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Uppsala, Sverige</p>
 					          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jakob&period;papirov [at] gmail.com</p>
@@ -106,26 +112,29 @@
 
 					      <div class="w3-white w3-text-grey w3-card-4 w3-margin-bottom">
 					        <div class="w3-container">
-					        	<h4>Hur arbetar jag effektivt?</h4>
+					        	<h4 class="w3-center">Hur arbetar jag effektivt?</h4>
 					        		<p>Beror självklart på mitt arbete och arbetsuppgifter men följande verktyg/utrustning finns alltid nära tillhands.</p>
 					        		<p>Klicka på en icon för att ta reda på mer!</p>
 					        	<ul>
+					        		<!-- Dropbox -->
 					        		<li>
 					        			<a href="https://www.youtube.com/watch?v=4Nan6Zt6bzw" target="_blank" title="YouTube: What is Dropbox?">
 					        				<img src="graphics/icons8-dropbox-32.png" alt="Dropbox logo"></a></li>
+					        		<!-- Papper & penna -->
 				        			<li>
 				        				<a href="https://www.akademibokhandeln.se/vara/kulspetspenna-vega-gel-bla/4902505276460/" target="_blank" title="Pilot Vega gel">
 				        					<img src="graphics/icons8-hand-with-pen-32.png" alt="Pen logo"></a> +
 				        				<a href="https://www.hedlundgruppen.com/skriv-och-rit/pappersprodukter/anteckningsbocker/wire-anteckningsbok-945" target="_blank" title="Wire-O Anteckningsbok">
-				        					<img src="graphics/icons8-spiral-bound-booklet-32.png" alt="Notebook logo"></a> = 
-				        				<a href="https://youtu.be/9tU0vG9UJ2I?t=204" target="_blank" title="Is it a bird? Is it a plane?">
-				        					<img src="graphics/icons8-superman-32.png" alt="Superman logo"></a></li>
+				        					<img src="graphics/icons8-spiral-bound-booklet-32.png" alt="Notebook logo"></a></li>
+				        			<!-- Everhour -->
 					        		<li>
 					        			<a href="http://everhour.com" target="_blank" title="Everhour">
 					        				<img src="" alt="Everhour logo"></a></li>
+					        		<!-- OneNote -->
 					        		<li>
 					        			<a href="https://www.youtube.com/watch?v=tbQqa-GZ_GI" target="_blank" title="Youtube: What is MS OneNote?">
 					        				<img src="graphics/icons8-microsoft-onenote-32.png" alt="MS OneNote logo"></a></li>
+					        		<!-- Vattenflaska -->
 					        		<li>
 					        			<a href="https://strengthwear.eu/collections/strengthgear/products/eleiko-sports-bottle-insulated?_pos=4&_sid=1a8b82e0c&_ss=r" target="_blank" title="Eleiko waterbottle!">
 					        				<img src="graphics/icons8-bottle-of-water-32.png" alt="Waterbottle logo"></a></li>
@@ -152,9 +161,9 @@
 									<!-- Subtab starts -->
 									<div class="" id="sumHireMe">
 										<!-- Card starts -->
-						        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Att anställa mig</h2>
+						        <h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Att anställa mig</h2>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Rubrik</b></h5>
+						          <h3 class="w3-opacity"><b>Rubrik</b></h3>
 						          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illo obcaecati iure fugiat explicabo nostrum quod soluta veritatis praesentium laborum eveniet totam enim commodi, quam eaque! Ullam neque rem itaque.</p>
 						        </div>
 						        <!-- Card ends -->
@@ -165,10 +174,10 @@
 									<div class="" id="sumEducation">
 
 										<!-- Card starts -->
-						        <div class="w3-container w3-card w3-white w3-margin-bottom">
-						        	<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Sammanställning | Utbildning</h2>
+						        <div class="w3-white w3-margin-bottom">
+						        	<h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Sammanställning | Utbildning</h2>
 
-						          <h5 class="w3-opacity"><b>Kandidatexamen i Geovetenskap (180 hp)</b></h5>
+						          <h3 class="w3-opacity"><b>Kandidatexamen i Geovetenskap (180 hp)</b></h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Aug 2008 - Aug 2015</h6>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Sep 2019 - Mar 2021</h6>
 							          <p>Framsteg kandidatexamen</p>
@@ -182,8 +191,8 @@
 						        <!-- Card ends -->
 
 										<!-- Card starts -->
-						        <div class="w3-container w3-card w3-white w3-margin-bottom">
-						          <h5 class="w3-opacity"><b>Masterexamen i Hydrologi/hydrgeologi</b></h5>
+						        <div class="w3-white w3-margin-bottom">
+						          <h3 class="w3-opacity"><b>Masterexamen i Hydrologi/hydrgeologi</b></h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Aug 2012 - Aug 2015</h6>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Mar 2021 - Dec 2021</h6>
 						          <p>Framsteg masterexamen</p>
@@ -224,8 +233,8 @@
 						        <!-- Card ends -->
 
 										<!-- Card starts -->
-						        <div class="w3-container w3-card w3-white w3-margin-bottom">
-						          <h5 class="w3-opacity"><b>Sammanställning examina (300 hp)</b></h5>
+						        <div class="w3-white w3-margin-bottom">
+						          <h3 class="w3-opacity"><b>Sammanställning examina (300 hp)</b></h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Aug 2008 - Aug 2015</h6>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Mar 2021 - Dec 2021</h6>
 						          	<p>Framsteg utbildning</p>
@@ -271,8 +280,8 @@
 									<!-- Subtab starts -->
 						      <div class="" id="sumEmployment">
 						        <div class="w3-container">
-						        	<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Sammanställning | Arbete</h2>
-						          <h5 class="w3-opacity"><b>Arbetsgivare</b></h5>
+						        	<h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Sammanställning | Arbete</h2>
+						          <h3 class="w3-opacity"><b>Arbetsgivare</b></h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Forever</h6>
 						          	<ul>
 						          		<li>Täby kommun</li>
@@ -292,7 +301,7 @@
 						          <hr>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Bransch</b></h5>
+						          <h3 class="w3-opacity"><b>Bransch</b></h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>2013 - 2015</h6>
 						          	<ul>
 						          		<li>Vård och omsorg</li>
@@ -587,16 +596,16 @@
 					    <article class="w3-twothird">
 
 					      <div class="w3-container w3-card w3-white">
-					        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Utbildning</h2>
+					        <h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fas fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Utbildning</h2>
 					        <div class="w3-container">
-					          <h5 class="w3-opacity"><b>Masterprogrammet</b> i hydrologi/hydrogeologi (120 hp), Uppsala universitet</h5>
+					          <h3 class="w3-opacity"><b>Masterprogrammet</b> i hydrologi/hydrogeologi (120 hp), Uppsala universitet</h3>
 					          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>
 					          	Aug 2012 - <small>Studieuppehåll fr. o. m. Aug 2015</small></h6>
 					          <p>Har läst fördjupande kurs(er) i vattenkemi, hydrologi samt grundvatten och avrinningsmodellering. Utöver dessa har jag även läst kurs(er) inom klimat, publikations- och presentationsteknik, hydromekanik samt statistik.</p>
 					          <hr>
 					        </div>
 					        <div class="w3-container">
-					          <h5 class="w3-opacity"><b>Kandidatprogrammet</b> i geovetenskap (180 hp), Uppsala universitet</h5>
+					          <h3 class="w3-opacity"><b>Kandidatprogrammet</b> i geovetenskap (180 hp), Uppsala universitet</h3>
 					          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>
 					          	Aug 2008 - <small>Studieuppehåll Aug 2015 - Aug 2019</small></h6>
 					          <p>Har läst kurs(er) om jordarter, bergarter, klimat, landskapsutveckling, samt kemi (30 hp), matematik (20 hp) och statistik (5 hp).</p>
@@ -630,6 +639,18 @@
 					          <hr>
 					        </div>
 					      </div><br>
+
+					      <div class="w3-white w3-text-grey w3-card-4" id="currentEmployment">
+					        <div class="w3-container">
+					          <h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Pågående anställning(ar)</h2>
+						        <div class="w3-container">
+						          <h5 class="w3-opacity"><b>Inget förnärvarande</b></h5>
+						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Aug 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+						          <p>Har återgått till studier.</p>
+						          <br><hr>
+						        </div>
+					        </div>
+					      </div>
 					    </aside>
 					    <!-- End Left Column -->
 
@@ -638,28 +659,41 @@
 								
 					    	<div class="w3-container w3-card w3-white w3-margin-bottom" id="tabsEmployment">
 					    		<ul>
-					    			<li><a href="#currentEmployment">Pågående anställning(ar)</a></li>
+					    			<li><a href="#openForEmployment">Tillgänglighet</a></li>
 					    			<li><a href="#longEmployment">Långtidsanställningar</a></li>
 					    			<li><a href="#shortEmployment">Korttidsanställningar</a></li>
 					    		</ul>
 
 									<!-- Pågående anställningar start -->
-					    		<div class="" id="currentEmployment">
-						        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Pågående anställning(ar)</h2>
-						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Inget förnärvarande</b></h5>
-						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Aug 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-						          <p>Har återgått till studier.</p>
-						          <br><hr>
-						        </div>
+					    		<div class="" id="openForEmployment">
+						        <h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Tillgänglig för...</h2>
+						        <p>Har ett specifikt behov?</p>
+						        <p>Antalet timmar jag är tillgänglig kan variera en vecka till en annan, men tveka inte att kontakta mig!</p>
+						        <ul>
+						        	<li class="w3-padding-16">
+						        		<img src="graphics/icons8-briefcase-64.png" title="Heltidsarbete" alt="Work">Heltidsarbete
+						        			</i><i class="far fa-times-circle fa-3x"></i></li>
+						        	<li class="w3-padding-16">
+						        		<img class="w3-margin-right" src="graphics/icons8-presentation-64.png" title="Presentation" alt="Presentation">Enskild firma: Presentation
+						        		</i><i class="far fa-check-circle fa-3x"></i></li>
+						        	<li class="w3-padding-16">
+						        		<img class="w3-margin-right" src="graphics/icons8-language-64.png" title="Översättning" alt="Översättning">Översättning av rapport (Sv <-> En)
+						        		</i><i class="far fa-check-circle fa-3x"></i></li>
+						        	<li class="w3-padding-16">
+						        		<img class="w3-margin-right" src="graphics/icons8-graph-64.png" title="Dataanalys" alt="Dataanalys">Dataanalys / grafframställning
+						        		</i><i class="far fa-check-circle fa-3x"></i></li>
+						        	<li class="w3-padding-16">
+						        		<img class="w3-margin-right" src="graphics/icons8-copybook-64.png" title="Sammanfattning rapport" alt="Sammanfattning rapport">Sammanfattning rapport.
+						        		</i><i class="far fa-check-circle fa-3x"></i></li>
+						        </ul>
 						      </div>
 					      	<!-- Pågående anställningar ends -->
 								
 									<!-- Långtidsanställningar start -->
 						      <div class="" id="longEmployment">
-						        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Långtidsanställningar </h2>
+						        <h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Långtidsanställningar </h2>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Lärare</b>, Uppsala musikklasser (UMK)</h5>
+						          <h3 class="w3-opacity"><b>Lärare</b>, Uppsala musikklasser (UMK)</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Aug 2017 – Dec 2017</h6>
 						          	<p>Arbetade heltid under en termin som Ma/NO-lärare samt mentor åt en Åk. 6. I arbetet ingick lektionsplanering, undervisning, rättning och betygssättning, stöd åt elever som behövde extra hjälp och åt elever som behövde mer utmaningar. Kommunikation med vårdnadshavare, utvecklingssamtal. Utvecklingsarbete inom skolan (konferenser).</p>
 						          <br>
@@ -670,7 +704,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Lärarvikarie</b>, Internationella Engelska Skolan i Uppsala (IESU)</h5>
+						          <h3 class="w3-opacity"><b>Lärarvikarie</b>, Internationella Engelska Skolan i Uppsala (IESU)</h5>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Apr 2016 – Jun 2017</h6>
 						          	<p>På engelska skolan undervisas NO, Ma i engelska och de andra ämnena på svenska. Skolan efterföljer vissa brittiska inslag som klädkod för lärare och mer disciplin på eleverna. Arbetsspråket på skolan är engelska.</p>
 						          	<p>Har vikarierat i SO, Sv, franska, tyska, musik, science och mathematics.</p>
@@ -682,7 +716,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Lärarvikarie</b>, Uppsala kommuns vikarieförmedling, Uppsala</h5>
+						          <h3 class="w3-opacity"><b>Lärarvikarie</b>, Uppsala kommuns vikarieförmedling, Uppsala</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jan 2016 – Jun 2017</h6>
 						          	<p>Lärarvikarie i följande ämnen och årskurser:</p>
 							          <ul>
@@ -698,7 +732,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Lärarvikarie</b>, VRE Education, Stockholm</h5>
+						          <h3 class="w3-opacity"><b>Lärarvikarie</b>, VRE Education, Stockholm</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Aug 2015 – Dec 2015</h6>
 						          	<p>Lärarvikarie i följande ämnen och årskurser:</p>
 							          <ul>
@@ -714,7 +748,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Personlig assistent (anhörig vårdare)</b>, Frösunda, Täby</h5>
+						          <h3 class="w3-opacity"><b>Personlig assistent (anhörig vårdare)</b>, Frösunda, Täby</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Mar 2013 – Dec 2013</h6>
 						          	<p>Har jobbat helger åt en släkting med vardagliga sysslor, så som matlagning, vardagsärenden, etc.</p>
 						          <br>
@@ -725,7 +759,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Personlig assistent (anhörig vårdare)</b>, Täby kommun, Täby</h5>
+						          <h3 class="w3-opacity"><b>Personlig assistent (anhörig vårdare)</b>, Täby kommun, Täby</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jan 2006 – Mar 2013</h6>
 						          	<p>Har jobbat helger åt en släkting med vardagliga sysslor, så som matlagning, vardagsärenden, etc.</p>
 						          <br>
@@ -736,7 +770,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Medarbetare</b>, Svenska McDonald’s AB, Täby</h5>
+						          <h3 class="w3-opacity"><b>Medarbetare</b>, Svenska McDonald’s AB, Täby</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jul 2002 – Dec 2006</h6>
 							          <p>Under min tid lärde jag mig alla stationer (eget initiativ), jobba under stress och i lag.</p>
 							          <ul>
@@ -756,9 +790,9 @@
 
 									<!-- Korttidsanställningar start -->
 						      <div class="" id="shortEmployment">
-						        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Kortidsanställningar </h2>
+						        <h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Kortidsanställningar </h2>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Handledare</b>, Uppsala kommun, Uppsala</h5>
+						          <h3 class="w3-opacity"><b>Handledare</b>, Uppsala kommun, Uppsala</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jun 2019 – Aug 2019</h6>
 						          	<p>Jag tillhörde Parkenhet 3, Ultuna, och hade som övergripande arbetsuppgift att handleda sommarjobbande ungdomar. Det var tre grupper om c:a 5 ungdomar som arbetade tre veckor vardera. Som handledare lärde jag upp ungdomarna i att plocka ogräs och ta bort skott, såg till att alla kände sig som en viktig del i sin grupp och försökte få dem att arbeta tillsammans. Jag hade ansvaret att ha koll på deras arbetade tider och skickade vidare uppgifterna till lönekontoret. En stor del av arbetet innebar också att hålla humöret uppe då ogräsplockande pågår i ur och skur. Jag strävade efter att vara en god förebild och visa på hur det är att arbeta och ge ungdomarna lite mer så som att räkna på skatt, mm.</p>
 						          <br>
@@ -769,7 +803,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Lernia</b>, Uppsala</h5>
+						          <h3 class="w3-opacity"><b>Lernia</b>, Uppsala</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Apr 2019 – Maj 2019</h6>
 						          	<p>Anställd på Lernia som konsult till Euromaster.</p>
 						          	<p>Under anställningens sista vecka fick jag lära mig att måla en fondvägg på Uppsalakontoret</p>
@@ -781,7 +815,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Lernia, Euromaster</b>, Uppsala</h5>
+						          <h3 class="w3-opacity"><b>Lernia, Euromaster</b>, Uppsala</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Apr 2019 – Apr 2019</h6>
 						          	<p>Under april månad har jag haft som uppdrag att hjälpa till på Euromaster med att skifta däck. Arbetet är mycket fysiskt tungt och innefattar långa dagar. Noggrannhet och kvickhet är väsentligt för att genomföra arbetet samt ett gott mod!</p>
 						          	<br>
@@ -792,7 +826,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Geotekniker, assistent</b>, WSP, Uppsala</h5>
+						          <h3 class="w3-opacity"><b>Geotekniker, assistent</b>, WSP, Uppsala</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jul 2016 – Jul 2016</h6>
 						          	<p>Under veckan som fältassistent assisterade jag med borrprovtagning i Rosendal, Uppsala med flera olika metoder.</p>
 						          	<br>
@@ -803,13 +837,13 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Kursbeskrivningar</b>, Uppsala universitet, Uppsala</h5>
+						          <h3 class="w3-opacity"><b>Kursbeskrivningar</b>, Uppsala universitet, Uppsala</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Okt 2014 – Nov 2014</h6>
 						          	<p>Jag skrev kursbeskrivningar för alla kurser på master-programmen inom geovetenskap åt studierektorn på master-programmet, både på svenska och engelska, åt en studierektor. Dessa skulle finnas med i kurskatalogen och på webben.</p>
 						          	<br><hr>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Administrativ assistent</b>, Stockholms stads miljöförvaltning, Stockholm</h5>
+						          <h3 class="w3-opacity"><b>Administrativ assistent</b>, Stockholms stads miljöförvaltning, Stockholm</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jun 2014 – Jul 2014</h6>
 						          	<p>Arbetade med att anpassa data från miljögiftsundersökningar till en kommande databas. Arbetet bestod till större delen av att arbeta i Excel och stämma av om datat och konsultrapporterna stämde överens.</p>
 						          	<br>
@@ -820,7 +854,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Labassistent</b>, Uppsala universitet, Uppsala</h5>
+						          <h3 class="w3-opacity"><b>Labassistent</b>, Uppsala universitet, Uppsala</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jun 2013 – Aug 2013</h6>
 						          	<p>Jobbade åt två post-docs med att förbereda havssediment för mikroskåpanalys (nanofossil)</p>
 						          	<br>
@@ -831,7 +865,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Studentundersökning</b>, Uppsala universitet, Uppsala</h5>
+						          <h3 class="w3-opacity"><b>Studentundersökning</b>, Uppsala universitet, Uppsala</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jan 2013 – Feb 2013</h6>
 						          	<p>Jag blev ombedd av studierektorn på MSc programmet i geovetenskap att svara på följande frågor hos de studenter som avslutat studier inom kandidat-programmet i geovetenskap: Vad gör studenterna nu? Läser de något master-program i geovetenskap? Om någon arbetar, har de planer på att påbörja master-programmet i geovetenskap vid ett senare tillfälle?</p>
 												<p>Undersökningen och rapporten skrevs på engelska.</p>
@@ -843,7 +877,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Fältasisstent</b>, Uppsala universitet, Uppsala</h5>
+						          <h3 class="w3-opacity"><b>Fältasisstent</b>, Uppsala universitet, Uppsala</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jan 2013 – Feb 2013</h6>
 						          	<p>Hjälpte en doktorand med provtagning och analys (mha en gaskromatograf) av vattenprover i fält (Tämnaren).</p>
 						          	<br>
@@ -854,7 +888,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Värd</b>, Idétåget, Uppsala</h5>
+						          <h3 class="w3-opacity"><b>Värd</b>, Idétåget, Uppsala</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Apr 2012 – Jun 2012</h6>
 						          	<p>Var värd under Idétåget för Venture Cup Syd, som vill främja entreprenörskap bland unga, samt spred information om eventet i förväg.</p>
 						          	<br>
@@ -865,7 +899,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Labassistent</b>, Uppsala universite, Uppsala</h5>
+						          <h3 class="w3-opacity"><b>Labassistent</b>, Uppsala universite, Uppsala</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Dec 2011 – Jan 2012</h6>
 						          	<p>Hjälpte en doktorand med att förbereda stenprover för geokemisk analys mha ett mikroskåp, en pincett och tålamod.</p>
 						          	<br>
@@ -876,7 +910,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Skiftarbetare</b>, Fredriksverk, Danmark</h5>
+						          <h3 class="w3-opacity"><b>Skiftarbetare</b>, Fredriksverk, Danmark</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jun 2010 – Jun 2010</h6>
 						          	<p>Jag och arbetslaget arbetade tio dagar på ett stålvalsverk med att byta ut färdiggjutna cementblock i stålvalsverket pga slitage. Stålvalsverket tar ett tag att svalna, men temperaturerna är rätt höga trots det. Arbetet var mycket fysiskt krävande och krävde även ett starkt samarbete. Vårt arbetslag arbetade 22 – 06, varje dag.</p>
 						          	<br>
@@ -931,9 +965,9 @@
 
 					      	<div class="" id="merits">
 							      <!-- Card starts -->
-						        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Meriter</h2>
+						        <h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fas fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Meriter</h2>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Kajakäventyr</b>, Västra Mälaren, Sverige</h5>
+						          <h3 class="w3-opacity"><b>Kajakäventyr</b>, Västra Mälaren, Sverige</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Sep 2019 – Sep 2019</h6>
 						          	<p>Efter att ha besegrat östra delen av Mälaren två år tidigare var planen nu att även besegra den västra. Och efter mer än ett halvårs planerande och över tremånaders träning tog jag mig an västra Mälaren. Jag paddlade Västerås – Kvicksund – Köping – Kungsör – Kvicksund – Sundbyholms slott – Strängnäs – Enköping – Hjulstabron på 10 dagar (c:a 200 km). Jag klarade målet på max 14 dagar dock inte målet tillbaka till Västerås då jag dessvärre fick avbryta pga för hård vind innan Hjulstabron. #kayakingmälarenwest2019</p>
 						          <br>
@@ -944,7 +978,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Kajakäventyr</b>, Västra Mälaren, Sverige</h5>
+						          <h3 class="w3-opacity"><b>Kajakäventyr</b>, Västra Mälaren, Sverige</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jul 2017 – Jul 2017</h6>
 						          	<p>Under knappt fem dagar paddlade jag kajak från Uppsala till Stockholm själv. Motivationen bakom var att jag ville utmana mig själv och se om jag skulle klara av det och under tiden jag hade budgeterat. Kajakäventyret gav mig en större förståelse för min fysiska och mentala förmåga, samt hur jag klarar av en nödsituation. Jag kapsejsade en gång.</p>
 						          <br>
@@ -955,7 +989,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Insatssoldat</b>,  Luftstridsskolan, Uppsala</h5>
+						          <h3 class="w3-opacity"><b>Insatssoldat</b>,  Luftstridsskolan, Uppsala</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jan 2007 – Dec 2007</h6>
 						          	<p>Trots värnpliktslagen, sökte Försvarsmakten främst villiga soldater (pga resursbrist). Jag var en av dem.</p>
 						          	<p>Som insatssoldat så gick jag följande utbildningar: grundsoldatutbildningen, fortsattsoldatutbildningen, skyddsvaktutbildningen, hjärt – och – lungräddning, samt AK5 och KSP-90.</p>
@@ -974,7 +1008,7 @@
 					      		<!-- Card starts -->
 					      		<h2 class="w3-text-grey w3-padding-16"><i class="fas fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Förtroendeuppdrag</h2>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Pappaledighet</b></h5>
+						          <h3 class="w3-opacity"><b>Pappaledighet</b></h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Mar 2018 – Mar 2019</h6>
 						          	<p>I uppdraget som pappaledig ingick det blöjbyten, matlagning och matning, planering av aktiviteter (stora som små; för dagen och för veckan), anpassa klädsel efter väder, stå för och packa med underhållning, ombyte, språkundervisning i ryska, tillämpad diplomati, kryp – stå och gå-träning, potträning, städning, tvättning, duscha, baby-simskola, ambulansresa, inskolning på förskola och även acceptans av missförstånd.</p>
 						          	<p>De största äventyren vi jag har gjort tillsammans är en resa till Malmö på nästan vecka och diverse tågresor till Stockholm/Västerås.</p>
@@ -986,7 +1020,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Kassör och medlem i styrelsen</b>, IAH Sverige</h5>
+						          <h3 class="w3-opacity"><b>Kassör och medlem i styrelsen</b>, IAH Sverige</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Maj 2014 – Juni 2015</h6>
 						          	<p>Kassör i en nystartad svensk förgrening av den globala (International Association of Hydrogeologists) IAH proffessionsföreningen.</p>
 						          <br>
@@ -997,7 +1031,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Projektledare</b>, läxläsningen, Uppsala</h5>
+						          <h3 class="w3-opacity"><b>Projektledare</b>, läxläsningen, Uppsala</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jan 2012 – Jun 2012</h6>
 						          	<p>Läxläsning för högstadieelver på Valsätraskolan, delprojekt i ESMeralda projektet av Uppsala Studentkår.</p>
 						          <br>
@@ -1008,7 +1042,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Kassör</b>(Guldklimp) klubbverket, Studierådet (GRUS)</h5>
+						          <h3 class="w3-opacity"><b>Kassör</b>(Guldklimp) klubbverket, Studierådet (GRUS)</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Feb 2011 – Feb 2012</h6>
 						          	<p>Hade koll på budgeten och gjorde kalkyler på kommande aktiviteter. Ökade kassan från c:a 300 kr till c:a 5 000 kr</p>
 						          <br>
@@ -1019,7 +1053,7 @@
 						        	<hr><br>
 						        </div>
 						        <div class="w3-container">
-						          <h5 class="w3-opacity"><b>Webmaster</b>, Studierådet (GRUS)</h5>
+						          <h3 class="w3-opacity"><b>Webmaster</b>, Studierådet (GRUS)</h3>
 						          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Feb 2010 – Okt 2011</h6>
 						          	<p>Hade lärt mig grundläggande HTML/CSS under vinterlovet och ville tillämpa färdigheterna på att skapa en ny och fräsh hemsida åt GRUS.</p>
 						          <br>
@@ -1146,7 +1180,7 @@
 
 					        		<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
 						        		<div class="w3-col s2 m2 l2 w3-center">
-						        			<img class="" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+						        			<img class="" src="graphics/logo-esri.png" alt="ArcGIS">
 						        		</div>
 						        		<div class="w3-col s10 m10 l10">
 						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
@@ -1158,7 +1192,7 @@
 										        <div class="panel first-letter w3-panel w3-blue w3-card-4">
 										        	<div class="w3-row w3-padding-16">
 										        		<div class="w3-col s2 m2 l2 w3-center">
-										        			<img class="w3-sand" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+										        			<img class="w3-sand" src="graphics/logo-esri.png" alt="ArcGIS">
 										        		</div>
 										        		<div class="w3-col s10 m10 l10">
 										        			<p>ArcGIS</p>
@@ -1166,7 +1200,7 @@
 										        	</div>
 										        	<div class="w3-row w3-padding-16">
 										        		<div class="w3-col s2 m2 l2 w3-center">
-										        			<img class="w3-sand" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+										        			<img class="w3-sand" src="graphics/logo-esri.png" alt="ArcGIS">
 										        		</div>
 										        		<div class="w3-col s10 m10 l10">
 										        			<p>ArcMap</p>
@@ -1174,7 +1208,7 @@
 										        	</div>
 										        	<div class="w3-row w3-padding-16">
 										        		<div class="w3-col s2 m2 l2 w3-center">
-										        			<img class="w3-sand" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+										        			<img class="w3-sand" src="graphics/logo-esri.png" alt="ArcGIS">
 										        		</div>
 										        		<div class="w3-col s10 m10 l10">
 										        			<p>ArcCatalog</p>
@@ -1207,7 +1241,7 @@
 
 						        	<div class="w3-row w3-padding-16 w3-margin-bottom min-height">
 						        		<div class="w3-col s2 m2 l2 w3-center">
-						        			<img class="" src="graphics/icons8-windows-xp-96.png" alt="Windows XP">
+						        			<img class="" src="graphics/med-gms-logo.png" width="75%" height="" alt="GMS">
 						        		</div>
 						        		<div class="w3-col s10 m10 l10">
 						        			<h2 class="w3-text-grey w3-center">Subjektiv kunskapsnivå</h2>
@@ -1919,21 +1953,21 @@
 					      <div class="w3-container w3-card w3-white">
 					        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-globe fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Språkkunskaper</h2>
 					        <div class="w3-container">
-					          <h5 class="w3-opacity"><b>Ryska</b></h5>
+					          <h3 class="w3-opacity"><b>Ryska</b></h3>
 					          	<p>Modersmål, nästintillflytande i tal.</p>
 					          <hr>
 					        </div>
 					        <div class="w3-container">
-					          <h5 class="w3-opacity"><b>Svenska</b></h5>
+					          <h3 class="w3-opacity"><b>Svenska</b></h3>
 					          	<p>Flytande i tal i skrift.</p>
 					          <hr>
 					        </div>
 					        <div class="w3-container">
-					          <h5 class="w3-opacity"><b>Engelska</b></h5>
+					          <h3 class="w3-opacity"><b>Engelska</b></h3>
 					          	<p>Flytande i tal i skrift.</p><br>
 					        </div>
 					        <div class="w3-container">
-					          <h5 class="w3-opacity"><b>Franska</b></h5>
+					          <h3 class="w3-opacity"><b>Franska</b></h3>
 					          	<p>Grundläggande tal och läsning.</p>
 					          	<p>Studerade franska i grundskolan med dåliga resultat, och hade bestämt mig att en dag ta revansch. Hösten 2015 var det dags att börja igen. Har dessvärre haft flera pauser, men lyckades komma en bra bit på Duolingo.</p><br>
 					        </div>
@@ -1975,9 +2009,9 @@
 
 								<!-- Card starts -->
 					      <div class="w3-container w3-card w3-white">
-					        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-chalkboard-teacher fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Enskild firma</h2>
+					        <h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fas fa-chalkboard-teacher fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Enskild firma</h2>
 					        <div class="w3-container">
-					          <h5 class="w3-opacity"><b>Studiehjälp, Rosendalsgymnasiet</b></h5>
+					          <h3 class="w3-opacity"><b>Studiehjälp, Rosendalsgymnasiet</b></h3>
 					          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-timeline-right"></i>Jan 2017 – Jun 2017</h6>
 					          	<p>Tog kontakt med flera gymnasieskolor och erbjöd mina tjänster. Rosendals gymnasie var intresserade av studiehjälp.</p>
 					          	<p>Har hjälpt till med rättning av nationellt prov i matematik, samt hjälpt studenter med matematik 1c , 2c, 3c & 4, fysik 1 & 2 och kemi 1 en gång i veckan.</p>
@@ -2004,14 +2038,11 @@
 
 			<footer>
 
-				<div class="footer-left">
-					
+				<div class="footer-left w3-center w3-padding-16">
 				</div>
-				<div class="footer-middle">
-					
+				<div class="footer-middle w3-center w3-padding-16">
 				</div>
-				<div class="footer-right">
-					
+				<div class="footer-right w3-center w3-padding-16">
 				</div>
 			</footer>
 
