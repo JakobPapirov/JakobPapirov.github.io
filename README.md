@@ -5,3 +5,12 @@
 At least that's the idea. It's completely possible that that won't be true at all as I forget, neglect or don't prioritise updating this repo. 
 
 Hopefully, the changes won't be that big, and I'll make sure to upate the repo whenever I do a drastic change.
+
+
+### Link dump
+
+* https://www.google.com/search?channel=crow2&client=firefox-b-d&q=html+call+to
+* https://ourcodeworld.com/articles/read/480/how-to-create-a-html-link-that-interacts-with-skype-call-chat-view-profile-add-to-contacts
+* https://css-tricks.com/child-and-sibling-selectors/
+* https://stackoverflow.com/questions/950087/how-do-i-include-a-javascript-file-in-another-javascript-file
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
