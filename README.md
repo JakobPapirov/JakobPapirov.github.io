@@ -14,3 +14,4 @@ Hopefully, the changes won't be that big, and I'll make sure to upate the repo w
 * https://css-tricks.com/child-and-sibling-selectors/
 * https://stackoverflow.com/questions/950087/how-do-i-include-a-javascript-file-in-another-javascript-file
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
+* https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
