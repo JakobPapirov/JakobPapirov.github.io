@@ -16,3 +16,6 @@ Hopefully, the changes won't be that big, and I'll make sure to upate the repo w
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
 * https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 * https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
+* https://api.jqueryui.com/dialog/
+* https://api.jqueryui.com/tabs/
+* https://www.outfox.com/do-not-track-for-google-analytics/
